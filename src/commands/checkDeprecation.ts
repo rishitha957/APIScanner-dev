@@ -9,11 +9,11 @@ export function highlightDeprecated(){
         // const sel = editor.selection;
         // const word = doc.getText(sel);
         // console.log("word highlighted - "+word);
-        readContents();
         let lineCount = editor.document.lineCount;
         for(let i=0;i<lineCount;i++){
             let text:string = editor.document.lineAt(i).text;
-            console.log(text);
+            // console.log(text);
+            readContents(text);
         }
         vscode.window.showInformationMessage('Hello World from PyDDetector!');
     }
