@@ -1,6 +1,6 @@
 {
-	"name": "pyddetectorts",
-	"displayName": "PyDDetectorTs",
+	"name": "apiscanner",
+	"displayName": "APIScanner",
 	"description": "Detects deprecated API in python code",
 	"version": "0.0.1",
 	"engines": {
@@ -16,7 +16,7 @@
 	"contributes": {
 		"commands": [
 			{
-				"command": "pyddetectorts.init",
+				"command": "apiscanner.init",
 				"title": "Deprecation Detector"
 			}
 		]
