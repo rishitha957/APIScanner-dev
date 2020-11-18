@@ -1,4 +1,4 @@
-# apiscanner README
+# APIScanner README
 
 This is the README for your extension "apiscanner". After writing up a brief description, we recommend including the following sections.
 
