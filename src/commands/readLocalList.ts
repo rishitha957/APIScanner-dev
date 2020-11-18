@@ -1,35 +1,116 @@
 import { downloadAndUnzipVSCode } from "vscode-test";
 
 import * as vscode from 'vscode';
+import {PythonShell} from 'python-shell';
+import { cwd } from "process";
+import * as fs from 'fs';
 
-export function getDeprecatedAPIcall(currentLine:string, apiElements: string){
-    let apiElementsList = apiElements.split('.');
-    let len:number = apiElementsList.length;
-    let str:string = apiElementsList[len-1].replace("()","");
-    str = str.replace("\n","");
-    str = str.replace(" ","");
-    // console.log(currentLine,str.length, str, currentLine.indexOf(str), currentLine.includes(str));
-    if(currentLine.includes(str)){
-        console.log("deprecated - ",currentLine);
-        return str;
-    }
-    return "-1";
+export function runDetectDeprecatedAPI(){
+    var shell = require('shelljs');
+    var path = require('path');
+    shell.cd(path.join(__dirname, "pyScripts/"));
+    shell.exec('python main.py');
+}
+export function getDeprecatedAPIcall(currentLine:string, apiElements:string[]){
+    apiElements.forEach(element => {
+        let words:string[] = currentLine.split(" ");
+        words.forEach(word => {
+            console.log(word,element);
+            if(element.indexOf(word)!==-1){
+                console.log(element);
+            }
+        });
+    });
 }
 export function readContents(currentLine:string){
-    let filepath:string = "D:/RISHA/vscode_extension/APIScanner/src/commands/deprecated_list.txt";
-    let doc = vscode.workspace.openTextDocument(vscode.Uri.file(filepath));
-    // let strArr:string[] = [];
-    doc.then(document => {
-        let localApiCalls:string = document.getText();
-        var localApiCallsStringArr = localApiCalls.split("\n");
-        for(let i=0; i<localApiCallsStringArr.length;i++){
-            let str:string = getDeprecatedAPIcall(currentLine,localApiCallsStringArr[i]);
-            // console.log("str - rc - ",str);
-            if(str.indexOf("-1")===-1){
-                // console.log("here !!!");
-                return str; 
-            };
+    let list:string[] = [];
+    if(currentLine.indexOf("import")!==-1){
+        console.log(currentLine);
+        if(currentLine.indexOf("sklearn")!==-1){
+            let path = require('path');
+            let fp1:string = path.join(__dirname, "pyScripts/output/sklearn_deprecated_api_elements.txt");
+            fs.readFile(fp1, function (err, data) {
+                if (err) {
+                    return console.error(err);
+                }
+                let list1:string[] = data.toString().split("\n");
+                list1.forEach(element => {
+                    list.push(element);
+                });
+                // console.log(list);
+            });
         }
-    });
-    // return "-1";
+        if(currentLine.indexOf("seaborn")!==-1){
+            // console.log("here2");
+            let path = require('path');
+            let fp1:string = path.join(__dirname, "pyScripts/output/seaborn_deprecated_api_elements.txt");
+            fs.readFile(fp1, function (err, data) {
+                if (err) {
+                    return console.error(err);
+                }
+                let list1:string[] = data.toString().split("\n");
+                list1.forEach(element => {
+                    list.push(element);
+                });
+                // console.log(list);
+            });
+        }
+        if(currentLine.indexOf("numpy")!==-1){
+            let path = require('path');
+            let fp1:string = path.join(__dirname, "pyScripts/output/numpy_deprecated_api_elements.txt");
+            fs.readFile(fp1, function (err, data) {
+                if (err) {
+                    return console.error(err);
+                }
+                let list1:string[] = data.toString().split("\n");
+                list1.forEach(element => {
+                    list.push(element);
+                });
+                // console.log(list);
+            });
+        }
+        if(currentLine.indexOf("matplotlib")!==-1){
+            let path = require('path');
+            let fp1:string = path.join(__dirname, "pyScripts/output/matplotlib_deprecated_api_elements.txt");
+            fs.readFile(fp1, function (err, data) {
+                if (err) {
+                    return console.error(err);
+                }
+                let list1:string[] = data.toString().split("\n");
+                list1.forEach(element => {
+                    list.push(element);
+                });
+                // console.log(list);
+            });
+        }
+        if(currentLine.indexOf("pandas")!==-1){
+            let path = require('path');
+            let fp1:string = path.join(__dirname, "pyScripts/output/pandas_deprecated_api_elements.txt");
+            fs.readFile(fp1, function (err, data) {
+                if (err) {
+                    return console.error(err);
+                }
+                let list1:string[] = data.toString().split("\n");
+                list1.forEach(element => {
+                    list.push(element);
+                });
+                // console.log(list);
+            });
+        }
+        if(currentLine.indexOf("scipy")!==-1){
+            let path = require('path');
+            let fp1:string = path.join(__dirname, "pyScripts/output/scipy_deprecated_api_elements.txt");
+            fs.readFile(fp1, function (err, data) {
+                if (err) {
+                    return console.error(err);
+                }
+                let list1:string[] = data.toString().split("\n");
+                list1.forEach(element => {
+                    list.push(element);
+                });
+                //console.log(list);
+            });
+        }
+    }
+    return list;
 }
