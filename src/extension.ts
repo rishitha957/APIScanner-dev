@@ -6,7 +6,7 @@ let kwd:string[] = [];
 let package1:string = "";
 let msg:string[] = [];
 // eslint-disable-next-line @typescript-eslint/naming-convention
-let deprecated_list:string[] = [];
+let Keyword_list:string[] = ["seaborn","sklearn","matplotlib","deprecate"];
 
 function getDeprecatedAPIcall(currentLine:string, apiElements:string[]){
 	apiElements.forEach(element => {
@@ -15,19 +15,30 @@ function getDeprecatedAPIcall(currentLine:string, apiElements:string[]){
 		let str:string = elements[0].replace("()","");
 		if(words[words.length - 1].indexOf(str)!==-1 && str!==""){
 			if(elements.length!==0){
-				const str1 = elements[0].replace("()","");
-				if(!kwd.includes(str1)){
-					kwd.push(str1);
-				}
-				let msg1:string = `${elements[0]} has been deprecated. `;
-				for(let i=1;i<elements.length;i++){
-					msg1 +=elements[i]+" ";
-				}
-				if(msg1.indexOf("arg")!==-1){
-					msg1 = `${elements[0]} : positional arguments has been deprecated"`;
-				}
-				if(!msg.includes(msg1)){
-					msg.push(msg1);
+				let flag:number = 1;
+				Keyword_list.forEach(element1 => {
+					if(elements[0].indexOf(element1)!==-1){
+						flag = 0;
+					}
+				});
+				if(flag!==0){
+					const str1 = elements[0].replace("()","");
+					if(!kwd.includes(str1)){
+						kwd.push(str1);
+					}
+					let msg1:string = elements[1];
+					if(msg1.indexOf("arg")!==-1){
+						msg1 = `${elements[0]} : arguments has been deprecated"`;
+					}
+					else{
+						msg1 = `${elements[0]} has been deprecated. `;
+					}
+					for(let i=1;i<elements.length;i++){
+						msg1 +=elements[i]+" ";
+					}
+					if(!msg.includes(msg1)){
+						msg.push(msg1);
+					}
 				}
 			}
 		}
@@ -68,7 +79,7 @@ function highlightDeprecated(){
             let text:string = editor.document.lineAt(i).text;
 			readContents(text);
 			getDeprecatedAPIcall(text,list);
-			console.log("here1 - ",kwd,msg);
+			// console.log("here1 - ",kwd,msg);
 		}
         return strArr;
     }
@@ -80,6 +91,40 @@ function highlightDeprecated(){
 export function activate(context: vscode.ExtensionContext) {
 
 	console.log('Congratulations, your extension "APIScanner" is now active!');
+	// let items: vscode.QuickPickItem[] = [];
+	// let options1:string[] = ["Use existing deprecated API List","Generate list dynamically"];
+	// for (let index = 0; index < options1.length; index++) {
+	// 	let item = options1[index];
+	// 	items.push({ 
+	// 		label: "("+(index+1)+") - ", 
+	// 		description: item,
+	// 	});
+	// 	}
+
+	// 	vscode.window.showQuickPick(items).then(selection => {
+	// 	// the user canceled the selection
+	// 	if (!selection) {
+	// 		return;
+	// 	}
+
+	// 	// the user selected some item. You could use `selection.name` too
+	// 	switch (selection.description) {
+	// 		case "Use existing deprecated API List": 
+	// 			console.log(selection.description);
+	// 			break;
+	// 		case "Generate list dynamically": 
+	// 			var shell = require('shelljs');
+	// 			var path = require('path');
+	// 			shell.config.execPath = path.join('C:', 'Program Files', 'nodejs', 'node.exe');
+	// 			shell.echo("test");
+	// 			shell.cd(path.join(__dirname, "commands/pyScripts/"));
+	// 			shell.exec('python main.py');
+	// 			break;
+	// 		//.....
+	// 		default:
+	// 		break;
+	// 	}
+	// });
 
 	let timeout: NodeJS.Timer | undefined = undefined;
 
