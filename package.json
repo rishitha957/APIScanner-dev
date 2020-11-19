@@ -3,7 +3,7 @@
 	"displayName": "APIScanner",
 	"publisher": "Rishitha",
 	"description": "Detects deprecated API in python code",
-	"version": "0.0.1",
+	"version": "0.1.0",
 	"engines": {
 		"vscode": "^1.51.0"
 	},
