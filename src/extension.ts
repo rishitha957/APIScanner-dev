@@ -23,6 +23,9 @@ function getDeprecatedAPIcall(currentLine:string, apiElements:string[]){
 				for(let i=1;i<elements.length;i++){
 					msg1 +=elements[i]+" ";
 				}
+				if(msg1.indexOf("arg")!==-1){
+					msg1 = `${elements[0]} : positional arguments has been deprecated"`;
+				}
 				if(!msg.includes(msg1)){
 					msg.push(msg1);
 				}
@@ -43,50 +46,22 @@ function readContents(currentLine:string){
 			}
 		});
 	}
+	const packages = ["sklearn","pandas","numpy","scipy","seaborn","matplotlib"];
     if(currentLine.indexOf("import")!==-1){
-        // console.log(currentLine);
-        if(currentLine.indexOf("sklearn")!==-1){
-            let path = require('path');
-			let fp1:string = path.join(__dirname, "commands/pyScripts/output/sklearn_deprecated_api_elements.txt");
-			util_readContents(fp1);
-			package1 = "sklearn";
+		for(let i=0;i<packages.length;i++){
+			if(currentLine.indexOf(packages[i])!==-1){
+                let path = require('path');
+                let fp1:string = path.join(__dirname, "commands/pyScripts/output/"+packages[i]+"_deprecated_api_elements.txt");
+				util_readContents(fp1);
+				package1 = packages[i];
+			}
 		}
-        if(currentLine.indexOf("seaborn")!==-1){
-            // console.log("here2");
-            let path = require('path');
-            let fp1:string = path.join(__dirname, "commands/pyScripts/output/seaborn_deprecated_api_elements.txt");
-			util_readContents(fp1);
-			package1 = "seaborn";
-        }
-        if(currentLine.indexOf("numpy")!==-1){
-            let path = require('path');
-            let fp1:string = path.join(__dirname, "commands/pyScripts/output/numpy_deprecated_api_elements.txt");
-			util_readContents(fp1);
-			package1 = "numpy";
-        }
-        if(currentLine.indexOf("matplotlib")!==-1){
-            let path = require('path');
-            let fp1:string = path.join(__dirname, "commands/pyScripts/output/matplotlib_deprecated_api_elements.txt");
-			util_readContents(fp1);
-			package1 = "matplotlib";
-        }
-        if(currentLine.indexOf("pandas")!==-1){
-            let path = require('path');
-            let fp1:string = path.join(__dirname, "commands/pyScripts/output/pandas_deprecated_api_elements.txt");
-			util_readContents(fp1);
-			package1 = "pandas";
-        }
-        if(currentLine.indexOf("scipy")!==-1){
-            let path = require('path');
-            let fp1:string = path.join(__dirname, "commands/pyScripts/output/scipy_deprecated_api_elements.txt");
-			util_readContents(fp1);
-			package1 = "scipy";
-        }
-    }
+	}
 }
 function highlightDeprecated(){
     const editor = vscode.window.activeTextEditor;
-    let strArr:string[] = [];
+	let strArr:string[] = [];
+	vscode.window.showInformationMessage('API Scanner is now active!');
     if(editor){
         let lineCount = editor.document.lineCount;
         for(let i=0;i<lineCount;i++){
@@ -95,7 +70,6 @@ function highlightDeprecated(){
 			getDeprecatedAPIcall(text,list);
 			console.log("here1 - ",kwd,msg);
 		}
-        vscode.window.showInformationMessage('API Scanner is now active!');
         return strArr;
     }
     else{
@@ -112,7 +86,7 @@ export function activate(context: vscode.ExtensionContext) {
 	const deprecationDecorationType = vscode.window.createTextEditorDecorationType({
 
 		cursor:'crosshair',
-		backgroundColor:"purple",
+		backgroundColor:"orange",
 		overviewRulerColor: 'blue',
 		overviewRulerLane: vscode.OverviewRulerLane.Right,
 		before: {
@@ -136,17 +110,35 @@ export function activate(context: vscode.ExtensionContext) {
 		if (!activeEditor) {
 			return;
 		}
+		function getIndicesOf(searchStr: string, str: string, caseSensitive: any) {
+			var searchStrLen = searchStr.length;
+			if (searchStrLen === 0) {
+				return [];
+			}
+			var startIndex = 0, index, indices = [];
+			if (!caseSensitive) {
+				str = str.toLowerCase();
+				searchStr = searchStr.toLowerCase();
+			}
+			while ((index = str.indexOf(searchStr, startIndex)) > -1) {
+				indices.push(index);
+				startIndex = index + searchStrLen;
+			}
+			return indices;
+		}
 		const text = activeEditor.document.getText();
 		const deprecatedCall: vscode.DecorationOptions[] = [];
-		let ind:number = -1;
+		let ind:number[] = [];
 		for(let i=0;i<kwd.length;i++){
-			ind = text.indexOf(kwd[i]);
-			if(ind!==-1){
-				if(activeEditor){
-					const startPos = activeEditor.document.positionAt(ind);
-					const endPos = activeEditor.document.positionAt(ind + kwd[i].length);
-					const decoration = { range: new vscode.Range(startPos, endPos), hoverMessage: msg[i] };
-					deprecatedCall.push(decoration);
+			ind = getIndicesOf(kwd[i],text,1);
+			if(ind.length!==0){
+				for(let j=0;j<ind.length;j++){
+					if(activeEditor){
+						const startPos = activeEditor.document.positionAt(ind[j]);
+						const endPos = activeEditor.document.positionAt(ind[j] + kwd[i].length);
+						const decoration = { range: new vscode.Range(startPos, endPos), hoverMessage: msg[i] };
+						deprecatedCall.push(decoration);
+					}
 				}
 			} 
 			if(activeEditor){

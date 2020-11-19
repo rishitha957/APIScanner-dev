@@ -1,6 +1,7 @@
 {
 	"name": "apiscanner",
 	"displayName": "APIScanner",
+	"publisher": "Rishitha",
 	"description": "Detects deprecated API in python code",
 	"version": "0.0.1",
 	"engines": {

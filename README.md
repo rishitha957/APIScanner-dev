@@ -1,65 +1,37 @@
+<<<<<<< HEAD
 # APIScanner README
+=======
+# API*Scanner*
+This Visual Studio Code Extension, **API*Scanner***, detects the deprecated APIs used in the developer's editor. API*Scanner* leverages the source code of the libraries used in the project to obtain a list of deprecated APIs. 
+>>>>>>> 5e38389... fixed class object deprecation functionality
 
-This is the README for your extension "apiscanner". After writing up a brief description, we recommend including the following sections.
 
 ## Features
 
-Describe specific features of your extension including screenshots of your extension in action. Image paths are relative to this README file.
+Approach we followed to highlight deprecated APIs are shown in the figure below:
 
-For example if there is an image subfolder under your extension project workspace:
+![Approach diagram](images/updated_process_diagram.PNG)
 
-\!\[feature X\]\(images/feature-x.png\)
+Snapshot of results of API*Scanner* extension. The black boxes indicate deprecated APIs highlighted by API*Scanner*. The red box indicates the message shown by API*Scanner* on hovering over the highlighted deprecated APIs.
 
-> Tip: Many popular extensions utilize animations. This is an excellent way to show off your extension! We recommend short, focused animations that are easy to follow.
+![Sample UI](images/sampleUI_light.JPG)
+
 
 ## Requirements
 
-If you have any requirements or dependencies, add a section describing those and how to install and configure them.
+It is a python specific extension. 
 
-## Extension Settings
+## Issues
 
-Include if your extension adds any VS Code settings through the `contributes.configuration` extension point.
+Calling out known issues can help limit users opening duplicate issues against your extension. You can post your issues at (https://github.com/rishitha957/APIScanner-dev/issues)
 
-For example:
-
-This extension contributes the following settings:
-
-* `myExtension.enable`: enable/disable this extension
-* `myExtension.thing`: set to `blah` to do something
-
-## Known Issues
-
-Calling out known issues can help limit users opening duplicate issues against your extension.
-
-## Release Notes
-
-Users appreciate release notes as you update your extension.
 
 ### 1.0.0
 
-Initial release of ...
-
-### 1.0.1
-
-Fixed issue #.
-
-### 1.1.0
-
-Added features X, Y, and Z.
+Initial release of API*Scanner*
 
 -----------------------------------------------------------------------------------------------------------
 
-## Working with Markdown
-
-**Note:** You can author your README using Visual Studio Code.  Here are some useful editor keyboard shortcuts:
-
-* Split the editor (`Cmd+\` on macOS or `Ctrl+\` on Windows and Linux)
-* Toggle preview (`Shift+CMD+V` on macOS or `Shift+Ctrl+V` on Windows and Linux)
-* Press `Ctrl+Space` (Windows, Linux) or `Cmd+Space` (macOS) to see a list of Markdown snippets
-
 ### For more information
 
-* [Visual Studio Code's Markdown Support](http://code.visualstudio.com/docs/languages/markdown)
-* [Markdown Syntax Reference](https://help.github.com/articles/markdown-basics/)
-
-**Enjoy!**
+* [Source code of API*Scanner*](https://github.com/rishitha957/APIScanner-dev)
