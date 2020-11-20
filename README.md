@@ -31,6 +31,7 @@ Snapshot of UI of API*Scanner* extension. The black boxes indicate deprecated AP
 
 # What's inside API*Scanner*-Dev Repository:
 package.json file triggers the extension, whenever the programming language used is python. out/commands/pyScripts contains the python scripts that generates the list of deprecated API elements. extension.ts file uses these list of deprecated API elements to highlight the usage of deprecated elements in the current active editor.
+
 # Steps to install API*Scanner*
 In visual studio code, click (ctrl+shift+x) to open Extensions tab. Now search for APIScanner and install it.
 

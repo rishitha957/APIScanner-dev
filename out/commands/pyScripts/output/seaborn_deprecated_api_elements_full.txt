@@ -1,0 +1,33 @@
+seaborn.pairplot(): @_deprecate_positional_args, ./seaborn/seaborn/axisgrid.py
+seaborn.jointplot(): @_deprecate_positional_args, ./seaborn/seaborn/axisgrid.py
+seaborn.FacetGrid: @_deprecate_positional_args, ./seaborn/seaborn/axisgrid.py
+seaborn.PairGrid: @_deprecate_positional_args, ./seaborn/seaborn/axisgrid.py
+seaborn.JointGrid: @_deprecate_positional_args, ./seaborn/seaborn/axisgrid.py
+seaborn.boxplot(): @_deprecate_positional_args, ./seaborn/seaborn/categorical.py
+seaborn.violinplot(): @_deprecate_positional_args, ./seaborn/seaborn/categorical.py
+seaborn.boxenplot(): @_deprecate_positional_args, ./seaborn/seaborn/categorical.py
+seaborn.stripplot(): @_deprecate_positional_args, ./seaborn/seaborn/categorical.py
+seaborn.swarmplot(): @_deprecate_positional_args, ./seaborn/seaborn/categorical.py
+seaborn.barplot(): @_deprecate_positional_args, ./seaborn/seaborn/categorical.py
+seaborn.pointplot(): @_deprecate_positional_args, ./seaborn/seaborn/categorical.py
+seaborn.countplot(): @_deprecate_positional_args, ./seaborn/seaborn/categorical.py
+seaborn.factorplot(): ~deprecated; please use `catplot` instead., ./seaborn/seaborn/categorical.py
+seaborn.catplot(): @_deprecate_positional_args, ./seaborn/seaborn/categorical.py
+seaborn.kdeplot(): @_deprecate_positional_args, ./seaborn/seaborn/distributions.py
+seaborn.rugplot(): @_deprecate_positional_args, ./seaborn/seaborn/distributions.py
+seaborn.distplot(): ~deprecated: flexibly plot a univariate distribution of observations. .. warning:: this function is deprecated and will be removed in a future version. please adapt your code to use one of two new functions:, ./seaborn/seaborn/distributions.py
+seaborn.heatmap(): @_deprecate_positional_args, ./seaborn/seaborn/matrix.py
+seaborn.dendrogram(): @_deprecate_positional_args, ./seaborn/seaborn/matrix.py
+seaborn.clustermap(): @_deprecate_positional_args, ./seaborn/seaborn/matrix.py
+seaborn.lmplot(): @_deprecate_positional_args, ./seaborn/seaborn/regression.py
+seaborn.regplot(): @_deprecate_positional_args, ./seaborn/seaborn/regression.py
+seaborn.residplot(): @_deprecate_positional_args, ./seaborn/seaborn/regression.py
+seaborn.lineplot(): @_deprecate_positional_args, ./seaborn/seaborn/relational.py
+seaborn.scatterplot(): @_deprecate_positional_args, ./seaborn/seaborn/relational.py
+seaborn.relplot(): @_deprecate_positional_args, ./seaborn/seaborn/relational.py
+seaborn.pmf_hist(): ~deprecated: will be removed in a future version., ./seaborn/seaborn/utils.py
+seaborn.axlabel(): ~deprecated: will be removed in a future version., ./seaborn/seaborn/utils.py
+seaborn.percentiles(): ~deprecated: will be removed in a future version., ./seaborn/seaborn/utils.py
+seaborn.sig_stars(): ~deprecated: will be removed in a future version., ./seaborn/seaborn/utils.py
+seaborn.iqr(): ~deprecated: will be removed in a future version., ./seaborn/seaborn/utils.py
+seaborn.variable_type():  warn - ignoreDeprecationWarning, ./seaborn/seaborn/_core.py

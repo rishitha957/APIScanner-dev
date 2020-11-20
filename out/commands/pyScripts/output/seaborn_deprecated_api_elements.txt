@@ -1,0 +1,33 @@
+pairplot(): @_deprecate_positional_args
+jointplot(): @_deprecate_positional_args
+FacetGrid: @_deprecate_positional_args
+PairGrid: @_deprecate_positional_args
+JointGrid: @_deprecate_positional_args
+boxplot(): @_deprecate_positional_args
+violinplot(): @_deprecate_positional_args
+boxenplot(): @_deprecate_positional_args
+stripplot(): @_deprecate_positional_args
+swarmplot(): @_deprecate_positional_args
+barplot(): @_deprecate_positional_args
+pointplot(): @_deprecate_positional_args
+countplot(): @_deprecate_positional_args
+factorplot(): ~deprecated; please use `catplot` instead.
+catplot(): @_deprecate_positional_args
+kdeplot(): @_deprecate_positional_args
+rugplot(): @_deprecate_positional_args
+distplot(): ~deprecated: flexibly plot a univariate distribution of observations. .. warning:: this function is deprecated and will be removed in a future version. please adapt your code to use one of two new functions:
+heatmap(): @_deprecate_positional_args
+dendrogram(): @_deprecate_positional_args
+clustermap(): @_deprecate_positional_args
+lmplot(): @_deprecate_positional_args
+regplot(): @_deprecate_positional_args
+residplot(): @_deprecate_positional_args
+lineplot(): @_deprecate_positional_args
+scatterplot(): @_deprecate_positional_args
+relplot(): @_deprecate_positional_args
+pmf_hist(): ~deprecated: will be removed in a future version.
+axlabel(): ~deprecated: will be removed in a future version.
+percentiles(): ~deprecated: will be removed in a future version.
+sig_stars(): ~deprecated: will be removed in a future version.
+iqr(): ~deprecated: will be removed in a future version.
+variable_type():  warn - ignoreDeprecationWarning

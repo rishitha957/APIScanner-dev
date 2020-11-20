@@ -1,0 +1,591 @@
+clone(): @_deprecate_positional_args
+_is_pairwise(): ~- if the `_pairwise` attribute and the tag are present and consistent, then use the value and not issue a warning. - if the `_pairwise` attribute and the tag are present and not consistent, use the `_pairwise` value and issue a deprecation warning. - if only the `_pairwise` attribute is present and it is not false, issue a deprecation warning and use the `_pairwise` value. warn - ignoreFutureWarning
+calibration_curve(): @_deprecate_positional_args
+CalibratedClassifierCV: @_deprecate_positional_args
+_CalibratedClassifier: @_deprecate_positional_args
+affinity_propagation(): @_deprecate_positional_args
+cluster: @_deprecate_positional_args
+AffinityPropagation: @_deprecate_positional_args
+_pairwise(): @deprecated. # Attribute _pairwise was deprecated in version 0.24 and will be removed in 0.26.
+ward_tree(): @_deprecate_positional_args
+cluster: @_deprecate_positional_args
+AgglomerativeClustering: @_deprecate_positional_args
+FeatureAgglomeration: @_deprecate_positional_args
+SpectralCoclustering: ~ .. deprecated:: 0.23 ``n_jobs`` was deprecated in version 0.23 and will be removed in 0.25., @_deprecate_positional_args
+SpectralBiclustering: ~ .. deprecated:: 0.23 ``n_jobs`` was deprecated in version 0.23 and will be removed in 0.25., @_deprecate_positional_args
+cluster: @_deprecate_positional_args
+cluster: @_deprecate_positional_args
+Birch: @_deprecate_positional_args
+dbscan(): @_deprecate_positional_args
+cluster: @_deprecate_positional_args
+DBSCAN: @_deprecate_positional_args
+KMeans: ~ .. deprecated:: 0.23 'precompute_distances' was deprecated in version 0.22 and will be removed in 0.25. it has no effect. .. deprecated:: 0.23 ``n_jobs`` was deprecated in version 0.23 and will be removed in 0.25., @_deprecate_positional_args
+MiniBatchKMeans: ~ .. deprecated:: 0.24 this attribute is deprecated in 0.24 and will be removed in 0.26. .. deprecated:: 0.24 this attribute is deprecated in 0.24 and will be removed in 0.26., @_deprecate_positional_args
+k_means(): ~ .. deprecated:: 0.23 'precompute_distances' was deprecated in version 0.23 and will be removed in 0.25. it has no effect. .. deprecated:: 0.23 ``n_jobs`` was deprecated in version 0.23 and will be removed in 0.25., @_deprecate_positional_args
+cluster: @_deprecate_positional_args
+counts_(): @deprecated. # The attribute 'counts_' is deprecated in 0.24 and will be removed in 0.26.
+init_size_(): @deprecated. # The attribute 'init_size_' is deprecated in 0.24 and will be removed in 0.26.
+random_state_(): @deprecated. # The attribute 'random_state_' is deprecated in 0.24 and will be removed in 0.26.
+estimate_bandwidth(): @_deprecate_positional_args
+mean_shift(): @_deprecate_positional_args
+cluster: @_deprecate_positional_args
+MeanShift: @_deprecate_positional_args
+cluster: @_deprecate_positional_args
+compute_optics_graph(): @_deprecate_positional_args
+cluster_optics_dbscan(): @_deprecate_positional_args
+OPTICS: @_deprecate_positional_args
+discretize(): @_deprecate_positional_args
+spectral_clustering(): @_deprecate_positional_args
+cluster: @_deprecate_positional_args
+SpectralClustering: @_deprecate_positional_args
+_pairwise(): @deprecated. # Attribute _pairwise was deprecated in version 0.24 and will be removed in 0.26.
+compose: @_deprecate_positional_args
+ColumnTransformer: @_deprecate_positional_args
+make_column_selector: @_deprecate_positional_args
+compose: @_deprecate_positional_args
+TransformedTargetRegressor: @_deprecate_positional_args
+covariance: @_deprecate_positional_args
+EllipticEnvelope: @_deprecate_positional_args
+empirical_covariance(): @_deprecate_positional_args
+covariance: @_deprecate_positional_args
+EmpiricalCovariance: @_deprecate_positional_args
+GraphicalLassoCV: ~ .. deprecated:: 0.24 the `cv_alphas_` attribute is deprecated in version 0.24 in favor of `cv_results_['alphas']` and will be removed in version 0.26. .. deprecated:: 0.24 the `grid_scores_` attribute is deprecated in version 0.24 in favor of `cv_results_` and will be removed in version 0.26., @_deprecate_positional_args
+graphical_lasso(): @_deprecate_positional_args
+covariance: @_deprecate_positional_args
+GraphicalLasso: @_deprecate_positional_args
+grid_scores_(): @deprecated. # The grid_scores_ attribute is deprecated in version 0.24 in favor of cv_results_ and will be removed in version 0.26
+cv_alphas_(): @deprecated. # The cv_alphas_ attribute is deprecated in version 0.24 in favor of cv_results_['alpha'] and will be removed in version 0.26
+covariance: @_deprecate_positional_args
+MinCovDet: @_deprecate_positional_args
+covariance: @_deprecate_positional_args
+ledoit_wolf(): @_deprecate_positional_args
+oas(): @_deprecate_positional_args
+ShrunkCovariance: @_deprecate_positional_args
+LedoitWolf: @_deprecate_positional_args
+PLSCanonical: ~ .. deprecated:: 0.24 `x_scores_` is deprecated in 0.24 and will be removed in 0.26. you can just call `transform` on the training data instead. .. deprecated:: 0.24 `y_scores_` is deprecated in 0.24 and will be removed in 0.26. you can just call `transform` on the training data instead., @_deprecate_positional_args
+CCA: ~ .. deprecated:: 0.24 `x_scores_` is deprecated in 0.24 and will be removed in 0.26. you can just call `transform` on the training data instead. .. deprecated:: 0.24 `y_scores_` is deprecated in 0.24 and will be removed in 0.26. you can just call `transform` on the training data instead., @_deprecate_positional_args
+PLSSVD: ~ .. deprecated:: 0.24 `x_scores_` is deprecated in 0.24 and will be removed in 0.26. you can just call `transform` on the training data instead. .. deprecated:: 0.24 `y_scores_` is deprecated in 0.24 and will be removed in 0.26. you can just call `transform` on the training data instead., @_deprecate_positional_args
+cross_decomposition: @_deprecate_positional_args
+norm_y_weights(): @deprecated. # Attribute norm_y_weights was deprecated in version 0.24 and will be removed in 0.26.
+PLSRegression: @_deprecate_positional_args
+x_scores_(): @deprecated. # Attribute x_scores_ was deprecated in version 0.24 and will be removed in 0.26. Use est.transform(X) on the training data instead.
+y_scores_(): @deprecated. # Attribute y_scores_ was deprecated in version 0.24 and will be removed in 0.26. Use est.transform(X, Y) on the training data instead.
+load_files(): @_deprecate_positional_args
+load_wine(): @_deprecate_positional_args
+load_iris(): @_deprecate_positional_args
+load_breast_cancer(): @_deprecate_positional_args
+load_digits(): @_deprecate_positional_args
+load_diabetes(): @_deprecate_positional_args
+load_linnerud(): @_deprecate_positional_args
+load_boston(): @_deprecate_positional_args
+fetch_california_housing(): @_deprecate_positional_args
+fetch_covtype(): @_deprecate_positional_args
+fetch_kddcup99(): @_deprecate_positional_args
+fetch_lfw_people(): @_deprecate_positional_args
+fetch_lfw_pairs(): @_deprecate_positional_args
+fetch_olivetti_faces(): @_deprecate_positional_args
+fetch_openml(): @_deprecate_positional_args
+fetch_rcv1(): @_deprecate_positional_args
+make_classification(): @_deprecate_positional_args
+make_multilabel_classification(): @_deprecate_positional_args
+make_hastie_10_2(): @_deprecate_positional_args
+make_regression(): @_deprecate_positional_args
+make_circles(): @_deprecate_positional_args
+make_moons(): @_deprecate_positional_args
+make_blobs(): @_deprecate_positional_args
+make_friedman1(): @_deprecate_positional_args
+make_friedman2(): @_deprecate_positional_args
+make_friedman3(): @_deprecate_positional_args
+make_low_rank_matrix(): @_deprecate_positional_args
+make_sparse_coded_signal(): @_deprecate_positional_args
+make_sparse_uncorrelated(): @_deprecate_positional_args
+make_spd_matrix(): @_deprecate_positional_args
+make_sparse_spd_matrix(): @_deprecate_positional_args
+make_swiss_roll(): @_deprecate_positional_args
+make_s_curve(): @_deprecate_positional_args
+make_gaussian_quantiles(): @_deprecate_positional_args
+make_biclusters(): @_deprecate_positional_args
+make_checkerboard(): @_deprecate_positional_args
+fetch_species_distributions(): @_deprecate_positional_args
+load_svmlight_file(): @_deprecate_positional_args
+load_svmlight_files(): @_deprecate_positional_args
+dump_svmlight_file(): @_deprecate_positional_args
+fetch_20newsgroups(): @_deprecate_positional_args
+fetch_20newsgroups_vectorized(): @_deprecate_positional_args
+SparseCoder: ~ .. deprecated:: 0.24 this attribute is deprecated in 0.24 and will be removed in 0.26. use `dictionary` instead., @_deprecate_positional_args
+sparse_encode(): @_deprecate_positional_args
+dict_learning(): @_deprecate_positional_args
+dict_learning_online(): @_deprecate_positional_args
+decomposition: @_deprecate_positional_args
+components_(): @deprecated. # The attribute 'components_' is deprecated in 0.24 and will be removed in 0.26. Use the 'dictionary' instead.
+DictionaryLearning: @_deprecate_positional_args
+MiniBatchDictionaryLearning: @_deprecate_positional_args
+decomposition: @_deprecate_positional_args
+FactorAnalysis: @_deprecate_positional_args
+fastica(): @_deprecate_positional_args
+decomposition: @_deprecate_positional_args
+FastICA: @_deprecate_positional_args
+decomposition: @_deprecate_positional_args
+IncrementalPCA: @_deprecate_positional_args
+decomposition: @_deprecate_positional_args
+KernelPCA: @_deprecate_positional_args
+_pairwise(): @deprecated. # Attribute _pairwise was deprecated in version 0.24 and will be removed in 0.26.
+decomposition: @_deprecate_positional_args
+LatentDirichletAllocation: @_deprecate_positional_args
+perplexity(): ~.. versionchanged:: 0.19 *doc_topic_distr* argument has been deprecated and is ignored because user no longer has access to unnormalized distribution
+non_negative_factorization(): @_deprecate_positional_args
+decomposition: @_deprecate_positional_args
+NMF: @_deprecate_positional_args
+decomposition: @_deprecate_positional_args
+PCA: @_deprecate_positional_args
+decomposition: @_deprecate_positional_args
+SparsePCA: @_deprecate_positional_args
+MiniBatchSparsePCA: @_deprecate_positional_args
+decomposition: @_deprecate_positional_args
+TruncatedSVD: @_deprecate_positional_args
+QuadraticDiscriminantAnalysis: @_deprecate_positional_args
+DummyClassifier: @_deprecate_positional_args
+DummyRegressor: @_deprecate_positional_args
+ensemble: @_deprecate_positional_args
+BaggingClassifier: @_deprecate_positional_args
+BaggingRegressor: @_deprecate_positional_args
+RandomForestClassifier: ~ .. deprecated:: 0.19 ``min_impurity_split`` has been deprecated in favor of ``min_impurity_decrease`` in 0.19. the default value of ``min_impurity_split`` has changed from 1e-7 to 0 in 0.23 and it will be removed in 0.25. use ``min_impurity_decrease`` instead., @_deprecate_positional_args
+RandomForestRegressor: ~ .. deprecated:: 0.19 ``min_impurity_split`` has been deprecated in favor of ``min_impurity_decrease`` in 0.19. the default value of ``min_impurity_split`` has changed from 1e-7 to 0 in 0.23 and it will be removed in 0.25. use ``min_impurity_decrease`` instead., @_deprecate_positional_args
+ExtraTreesClassifier: ~ .. deprecated:: 0.19 ``min_impurity_split`` has been deprecated in favor of ``min_impurity_decrease`` in 0.19. the default value of ``min_impurity_split`` has changed from 1e-7 to 0 in 0.23 and it will be removed in 0.25. use ``min_impurity_decrease`` instead., @_deprecate_positional_args
+ExtraTreesRegressor: ~ .. deprecated:: 0.19 ``min_impurity_split`` has been deprecated in favor of ``min_impurity_decrease`` in 0.19. the default value of ``min_impurity_split`` has changed from 1e-7 to 0 in 0.23 and it will be removed in 0.25. use ``min_impurity_decrease`` instead., @_deprecate_positional_args
+RandomTreesEmbedding: ~ .. deprecated:: 0.19 ``min_impurity_split`` has been deprecated in favor of ``min_impurity_decrease`` in 0.19. the default value of ``min_impurity_split`` has changed from 1e-7 to 0 in 0.23 and it will be removed in 0.25. use ``min_impurity_decrease`` instead., @_deprecate_positional_args
+_parallel_build_trees():  warn - ignoreDeprecationWarning
+ensemble: @_deprecate_positional_args
+GradientBoostingClassifier: ~ .. versionadded:: 0.18 .. deprecated:: 0.24 `criterion='mae'` is deprecated and will be removed in version 0.26. use `criterion='friedman_mse'` or `'mse'` instead, as trees should use a least-square criterion in gradient boosting. .. deprecated:: 0.19 ``min_impurity_split`` has been deprecated in favor of ``min_impurity_decrease`` in 0.19. the default value of ``min_impurity_split`` has changed from 1e-7 to 0 in 0.23 and it will be removed in 0.25. use ``min_impurity_decrease`` instead., @_deprecate_positional_args
+GradientBoostingRegressor: ~ .. versionadded:: 0.18 .. deprecated:: 0.24 `criterion='mae'` is deprecated and will be removed in version 0.26. the correct way of minimizing the absolute error is to use `loss='lad'` instead. .. deprecated:: 0.19 ``min_impurity_split`` has been deprecated in favor of ``min_impurity_decrease`` in 0.19. the default value of ``min_impurity_split`` has changed from 1e-7 to 0 in 0.23 and it will be removed in 0.25. use ``min_impurity_decrease`` instead. .. deprecated:: 0.24 attribute ``n_classes_`` was deprecated in version 0.24 and will be removed in 0.26., @_deprecate_positional_args
+ensemble: @_deprecate_positional_args
+n_classes_(): @deprecated. # Attribute n_classes_ was deprecated in version 0.24 and will be removed in 0.26.
+HistGradientBoostingRegressor: ~ this estimator is still **experimental** for now: the predictions and the api might change without any deprecation cycle. to use it, you need to explicitly import ``enable_hist_gradient_boosting``::, @_deprecate_positional_args
+HistGradientBoostingClassifier: ~ this estimator is still **experimental** for now: the predictions and the api might change without any deprecation cycle. to use it, you need to explicitly import ``enable_hist_gradient_boosting``::, @_deprecate_positional_args
+_hist_gradient_boosting: @_deprecate_positional_args
+ensemble: @_deprecate_positional_args
+IsolationForest: @_deprecate_positional_args
+ensemble: @_deprecate_positional_args
+StackingClassifier: @_deprecate_positional_args
+StackingRegressor: @_deprecate_positional_args
+VotingClassifier: ~ .. versionchanged:: 0.21 ``'drop'`` is accepted. using none was deprecated in 0.22 and support was removed in 0.24., @_deprecate_positional_args
+VotingRegressor: ~ .. versionchanged:: 0.21 ``'drop'`` is accepted. using none was deprecated in 0.22 and support was removed in 0.24., @_deprecate_positional_args
+ensemble: @_deprecate_positional_args
+ensemble: @_deprecate_positional_args
+AdaBoostClassifier: @_deprecate_positional_args
+AdaBoostRegressor: @_deprecate_positional_args
+img_to_graph(): @_deprecate_positional_args
+grid_to_graph(): @_deprecate_positional_args
+extract_patches_2d(): @_deprecate_positional_args
+feature_extraction: @_deprecate_positional_args
+PatchExtractor: @_deprecate_positional_args
+feature_extraction: @_deprecate_positional_args
+HashingVectorizer: @_deprecate_positional_args
+CountVectorizer: @_deprecate_positional_args
+TfidfTransformer: @_deprecate_positional_args
+TfidfVectorizer: @_deprecate_positional_args
+feature_extraction: @_deprecate_positional_args
+DictVectorizer: @_deprecate_positional_args
+FeatureHasher: ~.. versionchanged:: 0.19 ``alternate_sign`` replaces the now deprecated ``non_negative`` parameter., @_deprecate_positional_args
+feature_extraction: @_deprecate_positional_args
+feature_selection: @_deprecate_positional_args
+SelectFromModel: @_deprecate_positional_args
+mutual_info_regression(): @_deprecate_positional_args
+mutual_info_classif(): @_deprecate_positional_args
+feature_selection: @_deprecate_positional_args
+RFE: @_deprecate_positional_args
+RFECV: @_deprecate_positional_args
+f_regression(): @_deprecate_positional_args
+feature_selection: @_deprecate_positional_args
+SelectPercentile: @_deprecate_positional_args
+SelectKBest: @_deprecate_positional_args
+SelectFpr: @_deprecate_positional_args
+SelectFdr: @_deprecate_positional_args
+SelectFwe: @_deprecate_positional_args
+GenericUnivariateSelect: @_deprecate_positional_args
+gaussian_process: @_deprecate_positional_args
+_BinaryGaussianProcessClassifierLaplace: @_deprecate_positional_args
+GaussianProcessClassifier: @_deprecate_positional_args
+gaussian_process: @_deprecate_positional_args
+GaussianProcessRegressor: @_deprecate_positional_args
+impute: @_deprecate_positional_args
+SimpleImputer: @_deprecate_positional_args
+MissingIndicator: @_deprecate_positional_args
+IterativeImputer: ~ this estimator is still **experimental** for now: the predictions and the api might change without any deprecation cycle. to use it, you need to explicitly import ``enable_iterative_imputer``::
+impute: @_deprecate_positional_args
+KNNImputer: @_deprecate_positional_args
+partial_dependence(): ~ .. versionadded:: 0.24 .. deprecated:: 0.24 `kind='legacy'` is deprecated and will be removed in version 0.26. `kind='average'` will be the new default. it is intended to migrate from the ndarray output to :class:`~sklearn.utils.bunch` output., @_deprecate_positional_args
+permutation_importance(): @_deprecate_positional_args
+plot_partial_dependence(): @_deprecate_positional_args
+_plot: @_deprecate_positional_args
+PartialDependenceDisplay: @_deprecate_positional_args
+isotonic_regression(): @_deprecate_positional_args
+IsotonicRegression: @_deprecate_positional_args
+RBFSampler: @_deprecate_positional_args
+SkewedChi2Sampler: @_deprecate_positional_args
+AdditiveChi2Sampler: @_deprecate_positional_args
+Nystroem: @_deprecate_positional_args
+KernelRidge: @_deprecate_positional_args
+_pairwise(): @deprecated. # Attribute _pairwise was deprecated in version 0.24 and will be removed in 0.26.
+linear_model: @_deprecate_positional_args
+LinearRegression: @_deprecate_positional_args
+linear_model: @_deprecate_positional_args
+BayesianRidge: @_deprecate_positional_args
+ARDRegression: @_deprecate_positional_args
+lasso_path(): @_deprecate_positional_args
+enet_path(): @_deprecate_positional_args
+linear_model: @_deprecate_positional_args
+ElasticNet: @_deprecate_positional_args
+Lasso: @_deprecate_positional_args
+LassoCV: @_deprecate_positional_args
+ElasticNetCV: @_deprecate_positional_args
+MultiTaskElasticNet: @_deprecate_positional_args
+MultiTaskLasso: @_deprecate_positional_args
+MultiTaskElasticNetCV: @_deprecate_positional_args
+MultiTaskLassoCV: @_deprecate_positional_args
+linear_model: @_deprecate_positional_args
+HuberRegressor: @_deprecate_positional_args
+lars_path(): @_deprecate_positional_args
+lars_path_gram(): @_deprecate_positional_args
+linear_model: @_deprecate_positional_args
+Lars: @_deprecate_positional_args
+LassoLars: @_deprecate_positional_args
+LarsCV: @_deprecate_positional_args
+LassoLarsCV: @_deprecate_positional_args
+LassoLarsIC: @_deprecate_positional_args
+linear_model: @_deprecate_positional_args
+LogisticRegression: @_deprecate_positional_args
+LogisticRegressionCV: @_deprecate_positional_args
+orthogonal_mp(): @_deprecate_positional_args
+orthogonal_mp_gram(): @_deprecate_positional_args
+linear_model: @_deprecate_positional_args
+OrthogonalMatchingPursuit: @_deprecate_positional_args
+OrthogonalMatchingPursuitCV: @_deprecate_positional_args
+linear_model: @_deprecate_positional_args
+PassiveAggressiveClassifier: @_deprecate_positional_args
+PassiveAggressiveRegressor: @_deprecate_positional_args
+linear_model: @_deprecate_positional_args
+Perceptron: @_deprecate_positional_args
+linear_model: @_deprecate_positional_args
+RANSACRegressor: @_deprecate_positional_args
+ridge_regression(): @_deprecate_positional_args
+linear_model: @_deprecate_positional_args
+_BaseRidge: @_deprecate_positional_args
+Ridge: @_deprecate_positional_args
+RidgeClassifier: @_deprecate_positional_args
+_RidgeGCV: @_deprecate_positional_args
+_BaseRidgeCV: @_deprecate_positional_args
+RidgeClassifierCV: @_deprecate_positional_args
+sag_solver(): @_deprecate_positional_args
+SGDRegressor: ~ .. deprecated:: 0.23 attribute ``average_coef_`` was deprecated in version 0.23 and will be removed in 0.25. .. deprecated:: 0.23 attribute ``average_intercept_`` was deprecated in version 0.23 and will be removed in 0.25., @_deprecate_positional_args
+linear_model: @_deprecate_positional_args
+BaseSGD: @_deprecate_positional_args
+standard_coef_(): @deprecated. # Attribute standard_coef_ was deprecated in version 0.23 and will be removed in 0.25.
+standard_intercept_(): @deprecated. # Attribute standard_intercept_ was deprecated in version 0.23 and will be removed in 0.25.
+average_coef_(): @deprecated. # Attribute average_coef_ was deprecated in version 0.23 and will be removed in 0.25.
+average_intercept_(): @deprecated. # Attribute average_intercept_ was deprecated in version 0.23 and will be removed in 0.25.
+BaseSGDClassifier: @_deprecate_positional_args
+SGDClassifier: @_deprecate_positional_args
+BaseSGDRegressor: @_deprecate_positional_args
+linear_model: @_deprecate_positional_args
+TheilSenRegressor: @_deprecate_positional_args
+manifold: @_deprecate_positional_args
+Isomap: @_deprecate_positional_args
+locally_linear_embedding(): @_deprecate_positional_args
+manifold: @_deprecate_positional_args
+LocallyLinearEmbedding: @_deprecate_positional_args
+smacof(): @_deprecate_positional_args
+manifold: @_deprecate_positional_args
+MDS: @_deprecate_positional_args
+_pairwise(): @deprecated. # Attribute _pairwise was deprecated in version 0.24 and will be removed in 0.26.
+spectral_embedding(): @_deprecate_positional_args
+manifold: @_deprecate_positional_args
+SpectralEmbedding: @_deprecate_positional_args
+_pairwise(): @deprecated. # Attribute _pairwise was deprecated in version 0.24 and will be removed in 0.26.
+TSNE: ~ .. versionadded:: 0.24 added to provide backward compatibility during deprecation of legacy squaring behavior. .. deprecated:: 0.24 legacy squaring behavior was deprecated in 0.24. the ``'legacy'`` value will be removed in 0.26, at which point the default value will change to ``true``., @_deprecate_positional_args
+trustworthiness(): @_deprecate_positional_args
+manifold: @_deprecate_positional_args
+consensus_score(): @_deprecate_positional_args
+contingency_matrix(): @_deprecate_positional_args
+homogeneity_completeness_v_measure(): @_deprecate_positional_args
+v_measure_score(): @_deprecate_positional_args
+mutual_info_score(): @_deprecate_positional_args
+adjusted_mutual_info_score(): @_deprecate_positional_args
+normalized_mutual_info_score(): @_deprecate_positional_args
+fowlkes_mallows_score(): @_deprecate_positional_args
+silhouette_score(): @_deprecate_positional_args
+silhouette_samples(): @_deprecate_positional_args
+check_pairwise_arrays(): @_deprecate_positional_args
+euclidean_distances(): @_deprecate_positional_args
+nan_euclidean_distances(): @_deprecate_positional_args
+pairwise_distances_argmin_min(): @_deprecate_positional_args
+pairwise_distances_argmin(): @_deprecate_positional_args
+manhattan_distances(): @_deprecate_positional_args
+paired_distances(): @_deprecate_positional_args
+pairwise_distances_chunked(): @_deprecate_positional_args
+pairwise_distances(): @_deprecate_positional_args
+pairwise_kernels(): @_deprecate_positional_args
+accuracy_score(): @_deprecate_positional_args
+confusion_matrix(): @_deprecate_positional_args
+multilabel_confusion_matrix(): @_deprecate_positional_args
+cohen_kappa_score(): @_deprecate_positional_args
+jaccard_score(): @_deprecate_positional_args
+matthews_corrcoef(): @_deprecate_positional_args
+zero_one_loss(): @_deprecate_positional_args
+f1_score(): @_deprecate_positional_args
+fbeta_score(): @_deprecate_positional_args
+precision_recall_fscore_support(): @_deprecate_positional_args
+precision_score(): @_deprecate_positional_args
+recall_score(): @_deprecate_positional_args
+balanced_accuracy_score(): @_deprecate_positional_args
+classification_report(): @_deprecate_positional_args
+hamming_loss(): @_deprecate_positional_args
+log_loss(): @_deprecate_positional_args
+hinge_loss(): @_deprecate_positional_args
+brier_score_loss(): @_deprecate_positional_args
+_plot: @_deprecate_positional_args
+plot_confusion_matrix(): @_deprecate_positional_args
+ConfusionMatrixDisplay: @_deprecate_positional_args
+plot(): @_deprecate_positional_args
+_plot: @_deprecate_positional_args
+plot_precision_recall_curve(): @_deprecate_positional_args
+PrecisionRecallDisplay: @_deprecate_positional_args
+plot(): @_deprecate_positional_args
+_plot: @_deprecate_positional_args
+plot_roc_curve(): @_deprecate_positional_args
+RocCurveDisplay: @_deprecate_positional_args
+plot(): @_deprecate_positional_args
+average_precision_score(): @_deprecate_positional_args
+roc_auc_score(): @_deprecate_positional_args
+precision_recall_curve(): @_deprecate_positional_args
+roc_curve(): @_deprecate_positional_args
+label_ranking_average_precision_score(): @_deprecate_positional_args
+coverage_error(): @_deprecate_positional_args
+label_ranking_loss(): @_deprecate_positional_args
+dcg_score(): @_deprecate_positional_args
+ndcg_score(): @_deprecate_positional_args
+mean_absolute_error(): @_deprecate_positional_args
+mean_squared_error(): @_deprecate_positional_args
+mean_squared_log_error(): @_deprecate_positional_args
+median_absolute_error(): @_deprecate_positional_args
+explained_variance_score(): @_deprecate_positional_args
+r2_score(): @_deprecate_positional_args
+mean_tweedie_deviance(): @_deprecate_positional_args
+mean_poisson_deviance(): @_deprecate_positional_args
+mean_gamma_deviance(): @_deprecate_positional_args
+check_scoring(): @_deprecate_positional_args
+make_scorer(): @_deprecate_positional_args
+mixture: @_deprecate_positional_args
+BayesianGaussianMixture: @_deprecate_positional_args
+mixture: @_deprecate_positional_args
+GaussianMixture: @_deprecate_positional_args
+model_selection: @_deprecate_positional_args
+fit_grid_point(): @deprecated. # fit_grid_point is deprecated in version 0.23 and will be removed in version 0.25
+ParameterSampler: @_deprecate_positional_args
+BaseSearchCV: @_deprecate_positional_args
+_pairwise(): @deprecated. # Attribute _pairwise was deprecated in version 0.24 and will be removed in 0.26.
+fit(): @_deprecate_positional_args
+GridSearchCV: @_deprecate_positional_args
+RandomizedSearchCV: @_deprecate_positional_args
+HalvingGridSearchCV: ~ this estimator is still **experimental** for now: the predictions and the api might change without any deprecation cycle. to use it, you need to explicitly import ``enable_halving_search_cv``::
+HalvingRandomSearchCV: ~ this estimator is still **experimental** for now: the predictions and the api might change without any deprecation cycle. to use it, you need to explicitly import ``enable_halving_search_cv``::
+check_cv(): @_deprecate_positional_args
+_BaseKFold: @_deprecate_positional_args
+KFold: @_deprecate_positional_args
+StratifiedKFold: @_deprecate_positional_args
+TimeSeriesSplit: @_deprecate_positional_args
+_RepeatedSplits: @_deprecate_positional_args
+RepeatedKFold: @_deprecate_positional_args
+RepeatedStratifiedKFold: @_deprecate_positional_args
+BaseShuffleSplit: @_deprecate_positional_args
+ShuffleSplit: @_deprecate_positional_args
+GroupShuffleSplit: @_deprecate_positional_args
+StratifiedShuffleSplit: @_deprecate_positional_args
+cross_validate(): @_deprecate_positional_args
+cross_val_score(): @_deprecate_positional_args
+cross_val_predict(): @_deprecate_positional_args
+permutation_test_score(): @_deprecate_positional_args
+learning_curve(): @_deprecate_positional_args
+validation_curve(): @_deprecate_positional_args
+OneVsOneClassifier: ~ .. deprecated:: 0.24 the _pairwise attribute is deprecated in 0.24. from 0.26 and onward, `pairwise_indices_` will use the pairwise estimator tag instead., @_deprecate_positional_args
+OneVsRestClassifier: @_deprecate_positional_args
+_pairwise(): @deprecated. # Attribute _pairwise was deprecated in version 0.24 and will be removed in 0.26.
+_pairwise(): @deprecated. # Attribute _pairwise was deprecated in version 0.24 and will be removed in 0.26.
+OutputCodeClassifier: @_deprecate_positional_args
+_MultiOutputEstimator: @_deprecate_positional_args
+MultiOutputRegressor: @_deprecate_positional_args
+MultiOutputClassifier: @_deprecate_positional_args
+_BaseChain: @_deprecate_positional_args
+MultinomialNB: ~ .. deprecated:: 0.24 ``coef_`` is deprecated in 0.24 and will be removed in 0.26. .. deprecated:: 0.24 ``intercept_`` is deprecated in 0.24 and will be removed in 0.26., @_deprecate_positional_args
+ComplementNB: ~ .. deprecated:: 0.24 ``coef_`` is deprecated in 0.24 and will be removed in 0.26. .. deprecated:: 0.24 ``coef_`` is deprecated in 0.24 and will be removed in 0.26., @_deprecate_positional_args
+GaussianNB: @_deprecate_positional_args
+coef_(): @deprecated. # Attribute coef_ was deprecated in version 0.24 and will be removed in 0.26.
+intercept_(): @deprecated. # Attribute intercept_ was deprecated in version 0.24 and will be removed in 0.26.
+BernoulliNB: @_deprecate_positional_args
+CategoricalNB: @_deprecate_positional_args
+_pairwise(): @deprecated. # Attribute _pairwise was deprecated in version 0.24 and will be removed in 0.26.
+neighbors: @_deprecate_positional_args
+KNeighborsClassifier: @_deprecate_positional_args
+RadiusNeighborsClassifier: @_deprecate_positional_args
+kneighbors_graph(): @_deprecate_positional_args
+radius_neighbors_graph(): @_deprecate_positional_args
+neighbors: @_deprecate_positional_args
+KNeighborsTransformer: @_deprecate_positional_args
+RadiusNeighborsTransformer: @_deprecate_positional_args
+neighbors: @_deprecate_positional_args
+KernelDensity: @_deprecate_positional_args
+neighbors: @_deprecate_positional_args
+LocalOutlierFactor: @_deprecate_positional_args
+neighbors: @_deprecate_positional_args
+NeighborhoodComponentsAnalysis: @_deprecate_positional_args
+NearestCentroid: ~ .. versionchanged:: 0.19 ``metric='precomputed'`` was deprecated and now raises an error, @_deprecate_positional_args
+neighbors: @_deprecate_positional_args
+neighbors: @_deprecate_positional_args
+KNeighborsRegressor: @_deprecate_positional_args
+_pairwise(): @deprecated. # Attribute _pairwise was deprecated in version 0.24 and will be removed in 0.26.
+RadiusNeighborsRegressor: @_deprecate_positional_args
+neighbors: @_deprecate_positional_args
+NearestNeighbors: @_deprecate_positional_args
+neural_network: @_deprecate_positional_args
+MLPClassifier: @_deprecate_positional_args
+MLPRegressor: @_deprecate_positional_args
+neural_network: @_deprecate_positional_args
+BernoulliRBM: @_deprecate_positional_args
+FeatureUnion: ~ .. versionchanged:: 0.22 deprecated `none` as a transformer in favor of 'drop'., @_deprecate_positional_args
+Pipeline: @_deprecate_positional_args
+_pairwise(): @deprecated. # Attribute _pairwise was deprecated in version 0.24 and will be removed in 0.26.
+scale(): @_deprecate_positional_args
+preprocessing: @_deprecate_positional_args
+minmax_scale(): @_deprecate_positional_args
+maxabs_scale(): @_deprecate_positional_args
+robust_scale(): @_deprecate_positional_args
+normalize(): @_deprecate_positional_args
+binarize(): @_deprecate_positional_args
+quantile_transform(): @_deprecate_positional_args
+power_transform(): @_deprecate_positional_args
+MinMaxScaler: @_deprecate_positional_args
+StandardScaler: @_deprecate_positional_args
+MaxAbsScaler: @_deprecate_positional_args
+RobustScaler: @_deprecate_positional_args
+PolynomialFeatures: @_deprecate_positional_args
+Normalizer: @_deprecate_positional_args
+Binarizer: @_deprecate_positional_args
+_pairwise(): @deprecated. # Attribute _pairwise was deprecated in version 0.24 and will be removed in 0.26.
+QuantileTransformer: @_deprecate_positional_args
+PowerTransformer: @_deprecate_positional_args
+preprocessing: @_deprecate_positional_args
+KBinsDiscretizer: @_deprecate_positional_args
+preprocessing: @_deprecate_positional_args
+OneHotEncoder: @_deprecate_positional_args
+OrdinalEncoder: @_deprecate_positional_args
+preprocessing: @_deprecate_positional_args
+FunctionTransformer: @_deprecate_positional_args
+preprocessing: @_deprecate_positional_args
+label_binarize(): @_deprecate_positional_args
+LabelBinarizer: @_deprecate_positional_args
+MultiLabelBinarizer: @_deprecate_positional_args
+johnson_lindenstrauss_min_dim(): @_deprecate_positional_args
+GaussianRandomProjection: @_deprecate_positional_args
+SparseRandomProjection: @_deprecate_positional_args
+semi_supervised: @_deprecate_positional_args
+BaseLabelPropagation: @_deprecate_positional_args
+LabelPropagation: @_deprecate_positional_args
+LabelSpreading: @_deprecate_positional_args
+_pairwise(): @deprecated. # Attribute _pairwise was deprecated in version 0.24 and will be removed in 0.26.
+l1_min_c(): @_deprecate_positional_args
+SVC: ~ .. versionchanged:: 0.17 deprecated *decision_function_shape='ovo' and none*., @_deprecate_positional_args
+NuSVC: ~ .. versionchanged:: 0.17 deprecated *decision_function_shape='ovo' and none*., @_deprecate_positional_args
+svm: @_deprecate_positional_args
+LinearSVC: @_deprecate_positional_args
+LinearSVR: @_deprecate_positional_args
+SVR: @_deprecate_positional_args
+probA_(): @deprecated. # The probA_ attribute is deprecated in version 0.23 and will be removed in version 0.25.
+probB_(): @deprecated. # The probB_ attribute is deprecated in version 0.23 and will be removed in version 0.25.
+NuSVR: @_deprecate_positional_args
+OneClassSVM: @_deprecate_positional_args
+probA_(): @deprecated. # The probA_ attribute is deprecated in version 0.23 and will be removed in version 0.25.
+probB_(): @deprecated. # The probB_ attribute is deprecated in version 0.23 and will be removed in version 0.25.
+DecisionTreeClassifier: ~ .. deprecated:: 0.19 ``min_impurity_split`` has been deprecated in favor of ``min_impurity_decrease`` in 0.19. the default value of ``min_impurity_split`` has changed from 1e-7 to 0 in 0.23 and it will be removed in 0.25. use ``min_impurity_decrease`` instead., @_deprecate_positional_args
+DecisionTreeRegressor: ~ .. deprecated:: 0.19 ``min_impurity_split`` has been deprecated in favor of ``min_impurity_decrease`` in 0.19. the default value of ``min_impurity_split`` has changed from 1e-7 to 0 in 0.23 and it will be removed in 0.25. use ``min_impurity_decrease`` instead., @_deprecate_positional_args
+ExtraTreeClassifier: ~ .. deprecated:: 0.19 ``min_impurity_split`` has been deprecated in favor of ``min_impurity_decrease`` in 0.19. the default value of ``min_impurity_split`` has changed from 1e-7 to 0 in 0.23 and it will be removed in 0.25. use ``min_impurity_decrease`` instead., @_deprecate_positional_args
+ExtraTreeRegressor: ~ .. deprecated:: 0.19 ``min_impurity_split`` has been deprecated in favor of ``min_impurity_decrease`` in 0.19. the default value of ``min_impurity_split`` has changed from 1e-7 to 0 in 0.23 and it will be removed in 0.25. use ``min_impurity_decrease`` instead., @_deprecate_positional_args
+tree: @_deprecate_positional_args
+BaseDecisionTree: @_deprecate_positional_args
+fit(): ~x_idx_sorted : deprecated, default="deprecated" this parameter is deprecated and has no effect. it will be removed in v0.26. .. deprecated :: 0.24
+fit(): ~x_idx_sorted : deprecated, default="deprecated" this parameter is deprecated and has no effect. it will be removed in v0.26. .. deprecated :: 0.24
+plot_tree(): ~ .. deprecated:: 0.23 ``rotate`` is deprecated in 0.23 and will be removed in 0.25., @_deprecate_positional_args
+export_graphviz(): @_deprecate_positional_args
+export_text(): @_deprecate_positional_args
+compute_class_weight(): @_deprecate_positional_args
+compute_sample_weight(): @_deprecate_positional_args
+deprecated: ~decorator to mark a function or class as deprecated. the optional extra argument will be appended to the deprecation message and the docstring. note: to use this with the default value for extra, put in an empty of parentheses: >>> from sklearn.utils import deprecated >>> deprecated() <sklearn.utils.deprecation.deprecated object at ...> >>> @deprecated() ... def some_function(): pass parameters ---------- extra : str, default='' to be added to the deprecation messages.
+_is_deprecated(): ~helper to check if func is wrapped by our deprecated decorator
+_decorate_class():  warn - FutureWarning
+wrapped():  warn - FutureWarning
+_decorate_fun():  warn - FutureWarning
+_decorate_property():  warn - FutureWarning
+check_supervised_y_no_nan():  warn - FutureWarning
+parametrize_with_checks(): ~ .. versionchanged:: 0.24 passing a class was deprecated in version 0.23, and support for classes was removed in 0.24. pass an instance instead.
+check_estimator(): ~ .. versionchanged:: 0.24 passing a class was deprecated in version 0.23, and support for classes was removed in 0.24.
+check_estimator_sparse_data():  warn - FutureWarning warn - FutureWarning warn - FutureWarning
+check_sample_weights_pandas_series():  warn - FutureWarning
+check_sample_weights_not_an_array():  warn - FutureWarning
+check_sample_weights_list():  warn - FutureWarning
+check_sample_weights_shape():  warn - FutureWarning
+check_sample_weights_invariance():  warn - FutureWarning
+check_dont_overwrite_parameters():  warn - FutureWarning
+check_fit2d_predict1d():  warn - FutureWarning
+check_methods_subset_invariance():  warn - FutureWarning
+check_methods_sample_order_invariance():  warn - FutureWarning
+check_transformer_general():  warn - FutureWarning
+check_transformer_data_not_an_array():  warn - FutureWarning
+check_transformers_unfitted():  warn - FutureWarning
+check_estimators_empty_data_messages():  warn - FutureWarning
+check_estimators_nan_inf():  warn - FutureWarning warn - FutureWarning
+check_estimators_partial_fit_n_features():  warn - FutureWarning
+check_classifier_multioutput():  warn - FutureWarning
+check_regressor_multioutput():  warn - FutureWarning
+check_clustering():  warn - FutureWarning
+check_clusterer_compute_labels_predict():  warn - FutureWarning
+check_classifiers_one_label():  warn - FutureWarning warn - FutureWarning
+check_classifiers_multilabel_representation_invariance():  warn - FutureWarning
+check_estimators_fit_returns_self():  warn - FutureWarning
+check_supervised_y_2d():  warn - FutureWarning
+check_regressors_int():  warn - FutureWarning
+check_regressors_train():  warn - FutureWarning
+check_class_weight_classifiers():  warn - FutureWarning
+check_class_weight_balanced_classifiers():  warn - FutureWarning
+check_class_weight_balanced_linear_classifier():  warn - FutureWarning
+check_estimators_overwrite_params():  warn - FutureWarning
+check_no_attributes_set_in_init():  warn - FutureWarning
+check_sparsify_coefficients():  warn - FutureWarning
+check_classifier_data_not_an_array():  warn - FutureWarning
+check_regressor_data_not_an_array():  warn - FutureWarning
+check_estimators_data_not_an_array():  warn - FutureWarning
+check_parameters_default_constructible():  warn - FutureWarning
+check_non_transformer_estimators_n_iter():  warn - FutureWarning
+check_transformer_n_iter():  warn - FutureWarning
+check_get_params_invariance():  warn - FutureWarning
+check_set_params():  warn - FutureWarning
+check_classifiers_regression_target():  warn - FutureWarning
+check_decision_proba_consistency():  warn - FutureWarning
+safe_sparse_dot(): @_deprecate_positional_args
+randomized_range_finder(): @_deprecate_positional_args
+randomized_svd(): @_deprecate_positional_args
+weighted_mode(): @_deprecate_positional_args
+single_source_shortest_path_length(): @_deprecate_positional_args
+_safe_split(): ~.. deprecated:: 0.24 the _pairwise attribute is deprecated in 0.24. from 0.26 and onward, this function will check for the pairwise estimator tag.
+incr_mean_variance_axis(): @_deprecate_positional_args
+assert_all_finite(): @_deprecate_positional_args
+as_float_array(): @_deprecate_positional_args
+check_array(): @_deprecate_positional_args
+check_X_y(): @_deprecate_positional_args
+column_or_1d(): @_deprecate_positional_args
+check_symmetric(): @_deprecate_positional_args
+check_is_fitted(): @_deprecate_positional_args
+_safe_indexing(): ~ this utility is documented, but **private**. this means that backward compatibility might be broken without any deprecation cycle.
+safe_sqr(): @_deprecate_positional_args
+gen_batches(): @_deprecate_positional_args
+gen_even_slices(): @_deprecate_positional_args
+get_chunk_n_rows(): @_deprecate_positional_args
+all_estimators():  warn - FutureWarning

@@ -1,0 +1,591 @@
+sklearn.clone(): @_deprecate_positional_args, ./scikit-learn/sklearn/base.py
+sklearn._is_pairwise(): ~- if the `_pairwise` attribute and the tag are present and consistent, then use the value and not issue a warning. - if the `_pairwise` attribute and the tag are present and not consistent, use the `_pairwise` value and issue a deprecation warning. - if only the `_pairwise` attribute is present and it is not false, issue a deprecation warning and use the `_pairwise` value. warn - ignoreFutureWarning, ./scikit-learn/sklearn/base.py
+sklearn.calibration_curve(): @_deprecate_positional_args, ./scikit-learn/sklearn/calibration.py
+sklearn.CalibratedClassifierCV: @_deprecate_positional_args, ./scikit-learn/sklearn/calibration.py
+sklearn._CalibratedClassifier: @_deprecate_positional_args, ./scikit-learn/sklearn/calibration.py
+sklearn.cluster.affinity_propagation(): @_deprecate_positional_args, ./scikit-learn/sklearn/cluster/_affinity_propagation.py
+sklearn.cluster: @_deprecate_positional_args, ./scikit-learn/sklearn/cluster/_affinity_propagation.py
+sklearn.cluster.AffinityPropagation: @_deprecate_positional_args, ./scikit-learn/sklearn/cluster/_affinity_propagation.py
+sklearn.cluster.AffinityPropagation._pairwise(): @deprecated. # Attribute _pairwise was deprecated in version 0.24 and will be removed in 0.26., ./scikit-learn/sklearn/cluster/_affinity_propagation.py
+sklearn.cluster.ward_tree(): @_deprecate_positional_args, ./scikit-learn/sklearn/cluster/_agglomerative.py
+sklearn.cluster: @_deprecate_positional_args, ./scikit-learn/sklearn/cluster/_agglomerative.py
+sklearn.cluster.AgglomerativeClustering: @_deprecate_positional_args, ./scikit-learn/sklearn/cluster/_agglomerative.py
+sklearn.cluster.FeatureAgglomeration: @_deprecate_positional_args, ./scikit-learn/sklearn/cluster/_agglomerative.py
+sklearn.cluster.SpectralCoclustering: ~ .. deprecated:: 0.23 ``n_jobs`` was deprecated in version 0.23 and will be removed in 0.25., @_deprecate_positional_args, ./scikit-learn/sklearn/cluster/_bicluster.py
+sklearn.cluster.SpectralBiclustering: ~ .. deprecated:: 0.23 ``n_jobs`` was deprecated in version 0.23 and will be removed in 0.25., @_deprecate_positional_args, ./scikit-learn/sklearn/cluster/_bicluster.py
+sklearn.cluster: @_deprecate_positional_args, ./scikit-learn/sklearn/cluster/_bicluster.py
+sklearn.cluster: @_deprecate_positional_args, ./scikit-learn/sklearn/cluster/_birch.py
+sklearn.cluster.Birch: @_deprecate_positional_args, ./scikit-learn/sklearn/cluster/_birch.py
+sklearn.cluster.dbscan(): @_deprecate_positional_args, ./scikit-learn/sklearn/cluster/_dbscan.py
+sklearn.cluster: @_deprecate_positional_args, ./scikit-learn/sklearn/cluster/_dbscan.py
+sklearn.cluster.DBSCAN: @_deprecate_positional_args, ./scikit-learn/sklearn/cluster/_dbscan.py
+sklearn.cluster.KMeans: ~ .. deprecated:: 0.23 'precompute_distances' was deprecated in version 0.22 and will be removed in 0.25. it has no effect. .. deprecated:: 0.23 ``n_jobs`` was deprecated in version 0.23 and will be removed in 0.25., @_deprecate_positional_args, ./scikit-learn/sklearn/cluster/_kmeans.py
+sklearn.cluster.MiniBatchKMeans: ~ .. deprecated:: 0.24 this attribute is deprecated in 0.24 and will be removed in 0.26. .. deprecated:: 0.24 this attribute is deprecated in 0.24 and will be removed in 0.26., @_deprecate_positional_args, ./scikit-learn/sklearn/cluster/_kmeans.py
+sklearn.cluster.k_means(): ~ .. deprecated:: 0.23 'precompute_distances' was deprecated in version 0.23 and will be removed in 0.25. it has no effect. .. deprecated:: 0.23 ``n_jobs`` was deprecated in version 0.23 and will be removed in 0.25., @_deprecate_positional_args, ./scikit-learn/sklearn/cluster/_kmeans.py
+sklearn.cluster: @_deprecate_positional_args, ./scikit-learn/sklearn/cluster/_kmeans.py
+sklearn.cluster.MiniBatchKMeans.counts_(): @deprecated. # The attribute 'counts_' is deprecated in 0.24 and will be removed in 0.26., ./scikit-learn/sklearn/cluster/_kmeans.py
+sklearn.cluster.MiniBatchKMeans.init_size_(): @deprecated. # The attribute 'init_size_' is deprecated in 0.24 and will be removed in 0.26., ./scikit-learn/sklearn/cluster/_kmeans.py
+sklearn.cluster.MiniBatchKMeans.random_state_(): @deprecated. # The attribute 'random_state_' is deprecated in 0.24 and will be removed in 0.26., ./scikit-learn/sklearn/cluster/_kmeans.py
+sklearn.cluster.estimate_bandwidth(): @_deprecate_positional_args, ./scikit-learn/sklearn/cluster/_mean_shift.py
+sklearn.cluster.mean_shift(): @_deprecate_positional_args, ./scikit-learn/sklearn/cluster/_mean_shift.py
+sklearn.cluster: @_deprecate_positional_args, ./scikit-learn/sklearn/cluster/_mean_shift.py
+sklearn.cluster.MeanShift: @_deprecate_positional_args, ./scikit-learn/sklearn/cluster/_mean_shift.py
+sklearn.cluster: @_deprecate_positional_args, ./scikit-learn/sklearn/cluster/_optics.py
+sklearn.cluster.compute_optics_graph(): @_deprecate_positional_args, ./scikit-learn/sklearn/cluster/_optics.py
+sklearn.cluster.cluster_optics_dbscan(): @_deprecate_positional_args, ./scikit-learn/sklearn/cluster/_optics.py
+sklearn.cluster.OPTICS: @_deprecate_positional_args, ./scikit-learn/sklearn/cluster/_optics.py
+sklearn.cluster.discretize(): @_deprecate_positional_args, ./scikit-learn/sklearn/cluster/_spectral.py
+sklearn.cluster.spectral_clustering(): @_deprecate_positional_args, ./scikit-learn/sklearn/cluster/_spectral.py
+sklearn.cluster: @_deprecate_positional_args, ./scikit-learn/sklearn/cluster/_spectral.py
+sklearn.cluster.SpectralClustering: @_deprecate_positional_args, ./scikit-learn/sklearn/cluster/_spectral.py
+sklearn.cluster.SpectralClustering._pairwise(): @deprecated. # Attribute _pairwise was deprecated in version 0.24 and will be removed in 0.26., ./scikit-learn/sklearn/cluster/_spectral.py
+sklearn.compose: @_deprecate_positional_args, ./scikit-learn/sklearn/compose/_column_transformer.py
+sklearn.compose.ColumnTransformer: @_deprecate_positional_args, ./scikit-learn/sklearn/compose/_column_transformer.py
+sklearn.compose.make_column_selector: @_deprecate_positional_args, ./scikit-learn/sklearn/compose/_column_transformer.py
+sklearn.compose: @_deprecate_positional_args, ./scikit-learn/sklearn/compose/_target.py
+sklearn.compose.TransformedTargetRegressor: @_deprecate_positional_args, ./scikit-learn/sklearn/compose/_target.py
+sklearn.covariance: @_deprecate_positional_args, ./scikit-learn/sklearn/covariance/_elliptic_envelope.py
+sklearn.covariance.EllipticEnvelope: @_deprecate_positional_args, ./scikit-learn/sklearn/covariance/_elliptic_envelope.py
+sklearn.covariance.empirical_covariance(): @_deprecate_positional_args, ./scikit-learn/sklearn/covariance/_empirical_covariance.py
+sklearn.covariance: @_deprecate_positional_args, ./scikit-learn/sklearn/covariance/_empirical_covariance.py
+sklearn.covariance.EmpiricalCovariance: @_deprecate_positional_args, ./scikit-learn/sklearn/covariance/_empirical_covariance.py
+sklearn.covariance.GraphicalLassoCV: ~ .. deprecated:: 0.24 the `cv_alphas_` attribute is deprecated in version 0.24 in favor of `cv_results_['alphas']` and will be removed in version 0.26. .. deprecated:: 0.24 the `grid_scores_` attribute is deprecated in version 0.24 in favor of `cv_results_` and will be removed in version 0.26., @_deprecate_positional_args, ./scikit-learn/sklearn/covariance/_graph_lasso.py
+sklearn.covariance.graphical_lasso(): @_deprecate_positional_args, ./scikit-learn/sklearn/covariance/_graph_lasso.py
+sklearn.covariance: @_deprecate_positional_args, ./scikit-learn/sklearn/covariance/_graph_lasso.py
+sklearn.covariance.GraphicalLasso: @_deprecate_positional_args, ./scikit-learn/sklearn/covariance/_graph_lasso.py
+sklearn.covariance.GraphicalLassoCV.grid_scores_(): @deprecated. # The grid_scores_ attribute is deprecated in version 0.24 in favor of cv_results_ and will be removed in version 0.26, ./scikit-learn/sklearn/covariance/_graph_lasso.py
+sklearn.covariance.GraphicalLassoCV.cv_alphas_(): @deprecated. # The cv_alphas_ attribute is deprecated in version 0.24 in favor of cv_results_['alpha'] and will be removed in version 0.26, ./scikit-learn/sklearn/covariance/_graph_lasso.py
+sklearn.covariance: @_deprecate_positional_args, ./scikit-learn/sklearn/covariance/_robust_covariance.py
+sklearn.covariance.MinCovDet: @_deprecate_positional_args, ./scikit-learn/sklearn/covariance/_robust_covariance.py
+sklearn.covariance: @_deprecate_positional_args, ./scikit-learn/sklearn/covariance/_shrunk_covariance.py
+sklearn.covariance.ledoit_wolf(): @_deprecate_positional_args, ./scikit-learn/sklearn/covariance/_shrunk_covariance.py
+sklearn.covariance.oas(): @_deprecate_positional_args, ./scikit-learn/sklearn/covariance/_shrunk_covariance.py
+sklearn.covariance.ShrunkCovariance: @_deprecate_positional_args, ./scikit-learn/sklearn/covariance/_shrunk_covariance.py
+sklearn.covariance.LedoitWolf: @_deprecate_positional_args, ./scikit-learn/sklearn/covariance/_shrunk_covariance.py
+sklearn.cross_decomposition.PLSCanonical: ~ .. deprecated:: 0.24 `x_scores_` is deprecated in 0.24 and will be removed in 0.26. you can just call `transform` on the training data instead. .. deprecated:: 0.24 `y_scores_` is deprecated in 0.24 and will be removed in 0.26. you can just call `transform` on the training data instead., @_deprecate_positional_args, ./scikit-learn/sklearn/cross_decomposition/_pls.py
+sklearn.cross_decomposition.CCA: ~ .. deprecated:: 0.24 `x_scores_` is deprecated in 0.24 and will be removed in 0.26. you can just call `transform` on the training data instead. .. deprecated:: 0.24 `y_scores_` is deprecated in 0.24 and will be removed in 0.26. you can just call `transform` on the training data instead., @_deprecate_positional_args, ./scikit-learn/sklearn/cross_decomposition/_pls.py
+sklearn.cross_decomposition.PLSSVD: ~ .. deprecated:: 0.24 `x_scores_` is deprecated in 0.24 and will be removed in 0.26. you can just call `transform` on the training data instead. .. deprecated:: 0.24 `y_scores_` is deprecated in 0.24 and will be removed in 0.26. you can just call `transform` on the training data instead., @_deprecate_positional_args, ./scikit-learn/sklearn/cross_decomposition/_pls.py
+sklearn.cross_decomposition: @_deprecate_positional_args, ./scikit-learn/sklearn/cross_decomposition/_pls.py
+sklearn.cross_decomposition._PLS.norm_y_weights(): @deprecated. # Attribute norm_y_weights was deprecated in version 0.24 and will be removed in 0.26., ./scikit-learn/sklearn/cross_decomposition/_pls.py
+sklearn.cross_decomposition.PLSRegression: @_deprecate_positional_args, ./scikit-learn/sklearn/cross_decomposition/_pls.py
+sklearn.cross_decomposition.PLSSVD.x_scores_(): @deprecated. # Attribute x_scores_ was deprecated in version 0.24 and will be removed in 0.26. Use est.transform(X) on the training data instead., ./scikit-learn/sklearn/cross_decomposition/_pls.py
+sklearn.cross_decomposition.PLSSVD.y_scores_(): @deprecated. # Attribute y_scores_ was deprecated in version 0.24 and will be removed in 0.26. Use est.transform(X, Y) on the training data instead., ./scikit-learn/sklearn/cross_decomposition/_pls.py
+sklearn.datasets.load_files(): @_deprecate_positional_args, ./scikit-learn/sklearn/datasets/_base.py
+sklearn.datasets.load_wine(): @_deprecate_positional_args, ./scikit-learn/sklearn/datasets/_base.py
+sklearn.datasets.load_iris(): @_deprecate_positional_args, ./scikit-learn/sklearn/datasets/_base.py
+sklearn.datasets.load_breast_cancer(): @_deprecate_positional_args, ./scikit-learn/sklearn/datasets/_base.py
+sklearn.datasets.load_digits(): @_deprecate_positional_args, ./scikit-learn/sklearn/datasets/_base.py
+sklearn.datasets.load_diabetes(): @_deprecate_positional_args, ./scikit-learn/sklearn/datasets/_base.py
+sklearn.datasets.load_linnerud(): @_deprecate_positional_args, ./scikit-learn/sklearn/datasets/_base.py
+sklearn.datasets.load_boston(): @_deprecate_positional_args, ./scikit-learn/sklearn/datasets/_base.py
+sklearn.datasets.fetch_california_housing(): @_deprecate_positional_args, ./scikit-learn/sklearn/datasets/_california_housing.py
+sklearn.datasets.fetch_covtype(): @_deprecate_positional_args, ./scikit-learn/sklearn/datasets/_covtype.py
+sklearn.datasets.fetch_kddcup99(): @_deprecate_positional_args, ./scikit-learn/sklearn/datasets/_kddcup99.py
+sklearn.datasets.fetch_lfw_people(): @_deprecate_positional_args, ./scikit-learn/sklearn/datasets/_lfw.py
+sklearn.datasets.fetch_lfw_pairs(): @_deprecate_positional_args, ./scikit-learn/sklearn/datasets/_lfw.py
+sklearn.datasets.fetch_olivetti_faces(): @_deprecate_positional_args, ./scikit-learn/sklearn/datasets/_olivetti_faces.py
+sklearn.datasets.fetch_openml(): @_deprecate_positional_args, ./scikit-learn/sklearn/datasets/_openml.py
+sklearn.datasets.fetch_rcv1(): @_deprecate_positional_args, ./scikit-learn/sklearn/datasets/_rcv1.py
+sklearn.datasets.make_classification(): @_deprecate_positional_args, ./scikit-learn/sklearn/datasets/_samples_generator.py
+sklearn.datasets.make_multilabel_classification(): @_deprecate_positional_args, ./scikit-learn/sklearn/datasets/_samples_generator.py
+sklearn.datasets.make_hastie_10_2(): @_deprecate_positional_args, ./scikit-learn/sklearn/datasets/_samples_generator.py
+sklearn.datasets.make_regression(): @_deprecate_positional_args, ./scikit-learn/sklearn/datasets/_samples_generator.py
+sklearn.datasets.make_circles(): @_deprecate_positional_args, ./scikit-learn/sklearn/datasets/_samples_generator.py
+sklearn.datasets.make_moons(): @_deprecate_positional_args, ./scikit-learn/sklearn/datasets/_samples_generator.py
+sklearn.datasets.make_blobs(): @_deprecate_positional_args, ./scikit-learn/sklearn/datasets/_samples_generator.py
+sklearn.datasets.make_friedman1(): @_deprecate_positional_args, ./scikit-learn/sklearn/datasets/_samples_generator.py
+sklearn.datasets.make_friedman2(): @_deprecate_positional_args, ./scikit-learn/sklearn/datasets/_samples_generator.py
+sklearn.datasets.make_friedman3(): @_deprecate_positional_args, ./scikit-learn/sklearn/datasets/_samples_generator.py
+sklearn.datasets.make_low_rank_matrix(): @_deprecate_positional_args, ./scikit-learn/sklearn/datasets/_samples_generator.py
+sklearn.datasets.make_sparse_coded_signal(): @_deprecate_positional_args, ./scikit-learn/sklearn/datasets/_samples_generator.py
+sklearn.datasets.make_sparse_uncorrelated(): @_deprecate_positional_args, ./scikit-learn/sklearn/datasets/_samples_generator.py
+sklearn.datasets.make_spd_matrix(): @_deprecate_positional_args, ./scikit-learn/sklearn/datasets/_samples_generator.py
+sklearn.datasets.make_sparse_spd_matrix(): @_deprecate_positional_args, ./scikit-learn/sklearn/datasets/_samples_generator.py
+sklearn.datasets.make_swiss_roll(): @_deprecate_positional_args, ./scikit-learn/sklearn/datasets/_samples_generator.py
+sklearn.datasets.make_s_curve(): @_deprecate_positional_args, ./scikit-learn/sklearn/datasets/_samples_generator.py
+sklearn.datasets.make_gaussian_quantiles(): @_deprecate_positional_args, ./scikit-learn/sklearn/datasets/_samples_generator.py
+sklearn.datasets.make_biclusters(): @_deprecate_positional_args, ./scikit-learn/sklearn/datasets/_samples_generator.py
+sklearn.datasets.make_checkerboard(): @_deprecate_positional_args, ./scikit-learn/sklearn/datasets/_samples_generator.py
+sklearn.datasets.fetch_species_distributions(): @_deprecate_positional_args, ./scikit-learn/sklearn/datasets/_species_distributions.py
+sklearn.datasets.load_svmlight_file(): @_deprecate_positional_args, ./scikit-learn/sklearn/datasets/_svmlight_format_io.py
+sklearn.datasets.load_svmlight_files(): @_deprecate_positional_args, ./scikit-learn/sklearn/datasets/_svmlight_format_io.py
+sklearn.datasets.dump_svmlight_file(): @_deprecate_positional_args, ./scikit-learn/sklearn/datasets/_svmlight_format_io.py
+sklearn.datasets.fetch_20newsgroups(): @_deprecate_positional_args, ./scikit-learn/sklearn/datasets/_twenty_newsgroups.py
+sklearn.datasets.fetch_20newsgroups_vectorized(): @_deprecate_positional_args, ./scikit-learn/sklearn/datasets/_twenty_newsgroups.py
+sklearn.decomposition.SparseCoder: ~ .. deprecated:: 0.24 this attribute is deprecated in 0.24 and will be removed in 0.26. use `dictionary` instead., @_deprecate_positional_args, ./scikit-learn/sklearn/decomposition/_dict_learning.py
+sklearn.decomposition.sparse_encode(): @_deprecate_positional_args, ./scikit-learn/sklearn/decomposition/_dict_learning.py
+sklearn.decomposition.dict_learning(): @_deprecate_positional_args, ./scikit-learn/sklearn/decomposition/_dict_learning.py
+sklearn.decomposition.dict_learning_online(): @_deprecate_positional_args, ./scikit-learn/sklearn/decomposition/_dict_learning.py
+sklearn.decomposition: @_deprecate_positional_args, ./scikit-learn/sklearn/decomposition/_dict_learning.py
+sklearn.decomposition.SparseCoder.components_(): @deprecated. # The attribute 'components_' is deprecated in 0.24 and will be removed in 0.26. Use the 'dictionary' instead., ./scikit-learn/sklearn/decomposition/_dict_learning.py
+sklearn.decomposition.DictionaryLearning: @_deprecate_positional_args, ./scikit-learn/sklearn/decomposition/_dict_learning.py
+sklearn.decomposition.MiniBatchDictionaryLearning: @_deprecate_positional_args, ./scikit-learn/sklearn/decomposition/_dict_learning.py
+sklearn.decomposition: @_deprecate_positional_args, ./scikit-learn/sklearn/decomposition/_factor_analysis.py
+sklearn.decomposition.FactorAnalysis: @_deprecate_positional_args, ./scikit-learn/sklearn/decomposition/_factor_analysis.py
+sklearn.decomposition.fastica(): @_deprecate_positional_args, ./scikit-learn/sklearn/decomposition/_fastica.py
+sklearn.decomposition: @_deprecate_positional_args, ./scikit-learn/sklearn/decomposition/_fastica.py
+sklearn.decomposition.FastICA: @_deprecate_positional_args, ./scikit-learn/sklearn/decomposition/_fastica.py
+sklearn.decomposition: @_deprecate_positional_args, ./scikit-learn/sklearn/decomposition/_incremental_pca.py
+sklearn.decomposition.IncrementalPCA: @_deprecate_positional_args, ./scikit-learn/sklearn/decomposition/_incremental_pca.py
+sklearn.decomposition: @_deprecate_positional_args, ./scikit-learn/sklearn/decomposition/_kernel_pca.py
+sklearn.decomposition.KernelPCA: @_deprecate_positional_args, ./scikit-learn/sklearn/decomposition/_kernel_pca.py
+sklearn.decomposition.KernelPCA._pairwise(): @deprecated. # Attribute _pairwise was deprecated in version 0.24 and will be removed in 0.26., ./scikit-learn/sklearn/decomposition/_kernel_pca.py
+sklearn.decomposition: @_deprecate_positional_args, ./scikit-learn/sklearn/decomposition/_lda.py
+sklearn.decomposition.LatentDirichletAllocation: @_deprecate_positional_args, ./scikit-learn/sklearn/decomposition/_lda.py
+sklearn.decomposition.LatentDirichletAllocation.perplexity(): ~.. versionchanged:: 0.19 *doc_topic_distr* argument has been deprecated and is ignored because user no longer has access to unnormalized distribution, ./scikit-learn/sklearn/decomposition/_lda.py
+sklearn.decomposition.non_negative_factorization(): @_deprecate_positional_args, ./scikit-learn/sklearn/decomposition/_nmf.py
+sklearn.decomposition: @_deprecate_positional_args, ./scikit-learn/sklearn/decomposition/_nmf.py
+sklearn.decomposition.NMF: @_deprecate_positional_args, ./scikit-learn/sklearn/decomposition/_nmf.py
+sklearn.decomposition: @_deprecate_positional_args, ./scikit-learn/sklearn/decomposition/_pca.py
+sklearn.decomposition.PCA: @_deprecate_positional_args, ./scikit-learn/sklearn/decomposition/_pca.py
+sklearn.decomposition: @_deprecate_positional_args, ./scikit-learn/sklearn/decomposition/_sparse_pca.py
+sklearn.decomposition.SparsePCA: @_deprecate_positional_args, ./scikit-learn/sklearn/decomposition/_sparse_pca.py
+sklearn.decomposition.MiniBatchSparsePCA: @_deprecate_positional_args, ./scikit-learn/sklearn/decomposition/_sparse_pca.py
+sklearn.decomposition: @_deprecate_positional_args, ./scikit-learn/sklearn/decomposition/_truncated_svd.py
+sklearn.decomposition.TruncatedSVD: @_deprecate_positional_args, ./scikit-learn/sklearn/decomposition/_truncated_svd.py
+sklearn.QuadraticDiscriminantAnalysis: @_deprecate_positional_args, ./scikit-learn/sklearn/discriminant_analysis.py
+sklearn.DummyClassifier: @_deprecate_positional_args, ./scikit-learn/sklearn/dummy.py
+sklearn.DummyRegressor: @_deprecate_positional_args, ./scikit-learn/sklearn/dummy.py
+sklearn.ensemble: @_deprecate_positional_args, ./scikit-learn/sklearn/ensemble/_bagging.py
+sklearn.ensemble.BaggingClassifier: @_deprecate_positional_args, ./scikit-learn/sklearn/ensemble/_bagging.py
+sklearn.ensemble.BaggingRegressor: @_deprecate_positional_args, ./scikit-learn/sklearn/ensemble/_bagging.py
+sklearn.ensemble.RandomForestClassifier: ~ .. deprecated:: 0.19 ``min_impurity_split`` has been deprecated in favor of ``min_impurity_decrease`` in 0.19. the default value of ``min_impurity_split`` has changed from 1e-7 to 0 in 0.23 and it will be removed in 0.25. use ``min_impurity_decrease`` instead., @_deprecate_positional_args, ./scikit-learn/sklearn/ensemble/_forest.py
+sklearn.ensemble.RandomForestRegressor: ~ .. deprecated:: 0.19 ``min_impurity_split`` has been deprecated in favor of ``min_impurity_decrease`` in 0.19. the default value of ``min_impurity_split`` has changed from 1e-7 to 0 in 0.23 and it will be removed in 0.25. use ``min_impurity_decrease`` instead., @_deprecate_positional_args, ./scikit-learn/sklearn/ensemble/_forest.py
+sklearn.ensemble.ExtraTreesClassifier: ~ .. deprecated:: 0.19 ``min_impurity_split`` has been deprecated in favor of ``min_impurity_decrease`` in 0.19. the default value of ``min_impurity_split`` has changed from 1e-7 to 0 in 0.23 and it will be removed in 0.25. use ``min_impurity_decrease`` instead., @_deprecate_positional_args, ./scikit-learn/sklearn/ensemble/_forest.py
+sklearn.ensemble.ExtraTreesRegressor: ~ .. deprecated:: 0.19 ``min_impurity_split`` has been deprecated in favor of ``min_impurity_decrease`` in 0.19. the default value of ``min_impurity_split`` has changed from 1e-7 to 0 in 0.23 and it will be removed in 0.25. use ``min_impurity_decrease`` instead., @_deprecate_positional_args, ./scikit-learn/sklearn/ensemble/_forest.py
+sklearn.ensemble.RandomTreesEmbedding: ~ .. deprecated:: 0.19 ``min_impurity_split`` has been deprecated in favor of ``min_impurity_decrease`` in 0.19. the default value of ``min_impurity_split`` has changed from 1e-7 to 0 in 0.23 and it will be removed in 0.25. use ``min_impurity_decrease`` instead., @_deprecate_positional_args, ./scikit-learn/sklearn/ensemble/_forest.py
+sklearn.ensemble._parallel_build_trees():  warn - ignoreDeprecationWarning, ./scikit-learn/sklearn/ensemble/_forest.py
+sklearn.ensemble: @_deprecate_positional_args, ./scikit-learn/sklearn/ensemble/_forest.py
+sklearn.ensemble.GradientBoostingClassifier: ~ .. versionadded:: 0.18 .. deprecated:: 0.24 `criterion='mae'` is deprecated and will be removed in version 0.26. use `criterion='friedman_mse'` or `'mse'` instead, as trees should use a least-square criterion in gradient boosting. .. deprecated:: 0.19 ``min_impurity_split`` has been deprecated in favor of ``min_impurity_decrease`` in 0.19. the default value of ``min_impurity_split`` has changed from 1e-7 to 0 in 0.23 and it will be removed in 0.25. use ``min_impurity_decrease`` instead., @_deprecate_positional_args, ./scikit-learn/sklearn/ensemble/_gb.py
+sklearn.ensemble.GradientBoostingRegressor: ~ .. versionadded:: 0.18 .. deprecated:: 0.24 `criterion='mae'` is deprecated and will be removed in version 0.26. the correct way of minimizing the absolute error is to use `loss='lad'` instead. .. deprecated:: 0.19 ``min_impurity_split`` has been deprecated in favor of ``min_impurity_decrease`` in 0.19. the default value of ``min_impurity_split`` has changed from 1e-7 to 0 in 0.23 and it will be removed in 0.25. use ``min_impurity_decrease`` instead. .. deprecated:: 0.24 attribute ``n_classes_`` was deprecated in version 0.24 and will be removed in 0.26., @_deprecate_positional_args, ./scikit-learn/sklearn/ensemble/_gb.py
+sklearn.ensemble: @_deprecate_positional_args, ./scikit-learn/sklearn/ensemble/_gb.py
+sklearn.ensemble.GradientBoostingRegressor.n_classes_(): @deprecated. # Attribute n_classes_ was deprecated in version 0.24 and will be removed in 0.26., ./scikit-learn/sklearn/ensemble/_gb.py
+sklearn.ensemble._hist_gradient_boosting.HistGradientBoostingRegressor: ~ this estimator is still **experimental** for now: the predictions and the api might change without any deprecation cycle. to use it, you need to explicitly import ``enable_hist_gradient_boosting``::, @_deprecate_positional_args, ./scikit-learn/sklearn/ensemble/_hist_gradient_boosting/gradient_boosting.py
+sklearn.ensemble._hist_gradient_boosting.HistGradientBoostingClassifier: ~ this estimator is still **experimental** for now: the predictions and the api might change without any deprecation cycle. to use it, you need to explicitly import ``enable_hist_gradient_boosting``::, @_deprecate_positional_args, ./scikit-learn/sklearn/ensemble/_hist_gradient_boosting/gradient_boosting.py
+sklearn.ensemble._hist_gradient_boosting: @_deprecate_positional_args, ./scikit-learn/sklearn/ensemble/_hist_gradient_boosting/gradient_boosting.py
+sklearn.ensemble: @_deprecate_positional_args, ./scikit-learn/sklearn/ensemble/_iforest.py
+sklearn.ensemble.IsolationForest: @_deprecate_positional_args, ./scikit-learn/sklearn/ensemble/_iforest.py
+sklearn.ensemble: @_deprecate_positional_args, ./scikit-learn/sklearn/ensemble/_stacking.py
+sklearn.ensemble.StackingClassifier: @_deprecate_positional_args, ./scikit-learn/sklearn/ensemble/_stacking.py
+sklearn.ensemble.StackingRegressor: @_deprecate_positional_args, ./scikit-learn/sklearn/ensemble/_stacking.py
+sklearn.ensemble.VotingClassifier: ~ .. versionchanged:: 0.21 ``'drop'`` is accepted. using none was deprecated in 0.22 and support was removed in 0.24., @_deprecate_positional_args, ./scikit-learn/sklearn/ensemble/_voting.py
+sklearn.ensemble.VotingRegressor: ~ .. versionchanged:: 0.21 ``'drop'`` is accepted. using none was deprecated in 0.22 and support was removed in 0.24., @_deprecate_positional_args, ./scikit-learn/sklearn/ensemble/_voting.py
+sklearn.ensemble: @_deprecate_positional_args, ./scikit-learn/sklearn/ensemble/_voting.py
+sklearn.ensemble: @_deprecate_positional_args, ./scikit-learn/sklearn/ensemble/_weight_boosting.py
+sklearn.ensemble.AdaBoostClassifier: @_deprecate_positional_args, ./scikit-learn/sklearn/ensemble/_weight_boosting.py
+sklearn.ensemble.AdaBoostRegressor: @_deprecate_positional_args, ./scikit-learn/sklearn/ensemble/_weight_boosting.py
+sklearn.feature_extraction.img_to_graph(): @_deprecate_positional_args, ./scikit-learn/sklearn/feature_extraction/image.py
+sklearn.feature_extraction.grid_to_graph(): @_deprecate_positional_args, ./scikit-learn/sklearn/feature_extraction/image.py
+sklearn.feature_extraction.extract_patches_2d(): @_deprecate_positional_args, ./scikit-learn/sklearn/feature_extraction/image.py
+sklearn.feature_extraction: @_deprecate_positional_args, ./scikit-learn/sklearn/feature_extraction/image.py
+sklearn.feature_extraction.PatchExtractor: @_deprecate_positional_args, ./scikit-learn/sklearn/feature_extraction/image.py
+sklearn.feature_extraction: @_deprecate_positional_args, ./scikit-learn/sklearn/feature_extraction/text.py
+sklearn.feature_extraction.HashingVectorizer: @_deprecate_positional_args, ./scikit-learn/sklearn/feature_extraction/text.py
+sklearn.feature_extraction.CountVectorizer: @_deprecate_positional_args, ./scikit-learn/sklearn/feature_extraction/text.py
+sklearn.feature_extraction.TfidfTransformer: @_deprecate_positional_args, ./scikit-learn/sklearn/feature_extraction/text.py
+sklearn.feature_extraction.TfidfVectorizer: @_deprecate_positional_args, ./scikit-learn/sklearn/feature_extraction/text.py
+sklearn.feature_extraction: @_deprecate_positional_args, ./scikit-learn/sklearn/feature_extraction/_dict_vectorizer.py
+sklearn.feature_extraction.DictVectorizer: @_deprecate_positional_args, ./scikit-learn/sklearn/feature_extraction/_dict_vectorizer.py
+sklearn.feature_extraction.FeatureHasher: ~.. versionchanged:: 0.19 ``alternate_sign`` replaces the now deprecated ``non_negative`` parameter., @_deprecate_positional_args, ./scikit-learn/sklearn/feature_extraction/_hash.py
+sklearn.feature_extraction: @_deprecate_positional_args, ./scikit-learn/sklearn/feature_extraction/_hash.py
+sklearn.feature_selection: @_deprecate_positional_args, ./scikit-learn/sklearn/feature_selection/_from_model.py
+sklearn.feature_selection.SelectFromModel: @_deprecate_positional_args, ./scikit-learn/sklearn/feature_selection/_from_model.py
+sklearn.feature_selection.mutual_info_regression(): @_deprecate_positional_args, ./scikit-learn/sklearn/feature_selection/_mutual_info.py
+sklearn.feature_selection.mutual_info_classif(): @_deprecate_positional_args, ./scikit-learn/sklearn/feature_selection/_mutual_info.py
+sklearn.feature_selection: @_deprecate_positional_args, ./scikit-learn/sklearn/feature_selection/_rfe.py
+sklearn.feature_selection.RFE: @_deprecate_positional_args, ./scikit-learn/sklearn/feature_selection/_rfe.py
+sklearn.feature_selection.RFECV: @_deprecate_positional_args, ./scikit-learn/sklearn/feature_selection/_rfe.py
+sklearn.feature_selection.f_regression(): @_deprecate_positional_args, ./scikit-learn/sklearn/feature_selection/_univariate_selection.py
+sklearn.feature_selection: @_deprecate_positional_args, ./scikit-learn/sklearn/feature_selection/_univariate_selection.py
+sklearn.feature_selection.SelectPercentile: @_deprecate_positional_args, ./scikit-learn/sklearn/feature_selection/_univariate_selection.py
+sklearn.feature_selection.SelectKBest: @_deprecate_positional_args, ./scikit-learn/sklearn/feature_selection/_univariate_selection.py
+sklearn.feature_selection.SelectFpr: @_deprecate_positional_args, ./scikit-learn/sklearn/feature_selection/_univariate_selection.py
+sklearn.feature_selection.SelectFdr: @_deprecate_positional_args, ./scikit-learn/sklearn/feature_selection/_univariate_selection.py
+sklearn.feature_selection.SelectFwe: @_deprecate_positional_args, ./scikit-learn/sklearn/feature_selection/_univariate_selection.py
+sklearn.feature_selection.GenericUnivariateSelect: @_deprecate_positional_args, ./scikit-learn/sklearn/feature_selection/_univariate_selection.py
+sklearn.gaussian_process: @_deprecate_positional_args, ./scikit-learn/sklearn/gaussian_process/_gpc.py
+sklearn.gaussian_process._BinaryGaussianProcessClassifierLaplace: @_deprecate_positional_args, ./scikit-learn/sklearn/gaussian_process/_gpc.py
+sklearn.gaussian_process.GaussianProcessClassifier: @_deprecate_positional_args, ./scikit-learn/sklearn/gaussian_process/_gpc.py
+sklearn.gaussian_process: @_deprecate_positional_args, ./scikit-learn/sklearn/gaussian_process/_gpr.py
+sklearn.gaussian_process.GaussianProcessRegressor: @_deprecate_positional_args, ./scikit-learn/sklearn/gaussian_process/_gpr.py
+sklearn.impute: @_deprecate_positional_args, ./scikit-learn/sklearn/impute/_base.py
+sklearn.impute.SimpleImputer: @_deprecate_positional_args, ./scikit-learn/sklearn/impute/_base.py
+sklearn.impute.MissingIndicator: @_deprecate_positional_args, ./scikit-learn/sklearn/impute/_base.py
+sklearn.impute.IterativeImputer: ~ this estimator is still **experimental** for now: the predictions and the api might change without any deprecation cycle. to use it, you need to explicitly import ``enable_iterative_imputer``::, ./scikit-learn/sklearn/impute/_iterative.py
+sklearn.impute: @_deprecate_positional_args, ./scikit-learn/sklearn/impute/_knn.py
+sklearn.impute.KNNImputer: @_deprecate_positional_args, ./scikit-learn/sklearn/impute/_knn.py
+sklearn.inspection.partial_dependence(): ~ .. versionadded:: 0.24 .. deprecated:: 0.24 `kind='legacy'` is deprecated and will be removed in version 0.26. `kind='average'` will be the new default. it is intended to migrate from the ndarray output to :class:`~sklearn.utils.bunch` output., @_deprecate_positional_args, ./scikit-learn/sklearn/inspection/_partial_dependence.py
+sklearn.inspection.permutation_importance(): @_deprecate_positional_args, ./scikit-learn/sklearn/inspection/_permutation_importance.py
+sklearn.inspection._plot.plot_partial_dependence(): @_deprecate_positional_args, ./scikit-learn/sklearn/inspection/_plot/partial_dependence.py
+sklearn.inspection._plot: @_deprecate_positional_args, ./scikit-learn/sklearn/inspection/_plot/partial_dependence.py
+sklearn.inspection._plot.PartialDependenceDisplay: @_deprecate_positional_args, ./scikit-learn/sklearn/inspection/_plot/partial_dependence.py
+sklearn.isotonic_regression(): @_deprecate_positional_args, ./scikit-learn/sklearn/isotonic.py
+sklearn.IsotonicRegression: @_deprecate_positional_args, ./scikit-learn/sklearn/isotonic.py
+sklearn.RBFSampler: @_deprecate_positional_args, ./scikit-learn/sklearn/kernel_approximation.py
+sklearn.SkewedChi2Sampler: @_deprecate_positional_args, ./scikit-learn/sklearn/kernel_approximation.py
+sklearn.AdditiveChi2Sampler: @_deprecate_positional_args, ./scikit-learn/sklearn/kernel_approximation.py
+sklearn.Nystroem: @_deprecate_positional_args, ./scikit-learn/sklearn/kernel_approximation.py
+sklearn.KernelRidge: @_deprecate_positional_args, ./scikit-learn/sklearn/kernel_ridge.py
+sklearn.KernelRidge._pairwise(): @deprecated. # Attribute _pairwise was deprecated in version 0.24 and will be removed in 0.26., ./scikit-learn/sklearn/kernel_ridge.py
+sklearn.linear_model: @_deprecate_positional_args, ./scikit-learn/sklearn/linear_model/_base.py
+sklearn.linear_model.LinearRegression: @_deprecate_positional_args, ./scikit-learn/sklearn/linear_model/_base.py
+sklearn.linear_model: @_deprecate_positional_args, ./scikit-learn/sklearn/linear_model/_bayes.py
+sklearn.linear_model.BayesianRidge: @_deprecate_positional_args, ./scikit-learn/sklearn/linear_model/_bayes.py
+sklearn.linear_model.ARDRegression: @_deprecate_positional_args, ./scikit-learn/sklearn/linear_model/_bayes.py
+sklearn.linear_model.lasso_path(): @_deprecate_positional_args, ./scikit-learn/sklearn/linear_model/_coordinate_descent.py
+sklearn.linear_model.enet_path(): @_deprecate_positional_args, ./scikit-learn/sklearn/linear_model/_coordinate_descent.py
+sklearn.linear_model: @_deprecate_positional_args, ./scikit-learn/sklearn/linear_model/_coordinate_descent.py
+sklearn.linear_model.ElasticNet: @_deprecate_positional_args, ./scikit-learn/sklearn/linear_model/_coordinate_descent.py
+sklearn.linear_model.Lasso: @_deprecate_positional_args, ./scikit-learn/sklearn/linear_model/_coordinate_descent.py
+sklearn.linear_model.LassoCV: @_deprecate_positional_args, ./scikit-learn/sklearn/linear_model/_coordinate_descent.py
+sklearn.linear_model.ElasticNetCV: @_deprecate_positional_args, ./scikit-learn/sklearn/linear_model/_coordinate_descent.py
+sklearn.linear_model.MultiTaskElasticNet: @_deprecate_positional_args, ./scikit-learn/sklearn/linear_model/_coordinate_descent.py
+sklearn.linear_model.MultiTaskLasso: @_deprecate_positional_args, ./scikit-learn/sklearn/linear_model/_coordinate_descent.py
+sklearn.linear_model.MultiTaskElasticNetCV: @_deprecate_positional_args, ./scikit-learn/sklearn/linear_model/_coordinate_descent.py
+sklearn.linear_model.MultiTaskLassoCV: @_deprecate_positional_args, ./scikit-learn/sklearn/linear_model/_coordinate_descent.py
+sklearn.linear_model: @_deprecate_positional_args, ./scikit-learn/sklearn/linear_model/_huber.py
+sklearn.linear_model.HuberRegressor: @_deprecate_positional_args, ./scikit-learn/sklearn/linear_model/_huber.py
+sklearn.linear_model.lars_path(): @_deprecate_positional_args, ./scikit-learn/sklearn/linear_model/_least_angle.py
+sklearn.linear_model.lars_path_gram(): @_deprecate_positional_args, ./scikit-learn/sklearn/linear_model/_least_angle.py
+sklearn.linear_model: @_deprecate_positional_args, ./scikit-learn/sklearn/linear_model/_least_angle.py
+sklearn.linear_model.Lars: @_deprecate_positional_args, ./scikit-learn/sklearn/linear_model/_least_angle.py
+sklearn.linear_model.LassoLars: @_deprecate_positional_args, ./scikit-learn/sklearn/linear_model/_least_angle.py
+sklearn.linear_model.LarsCV: @_deprecate_positional_args, ./scikit-learn/sklearn/linear_model/_least_angle.py
+sklearn.linear_model.LassoLarsCV: @_deprecate_positional_args, ./scikit-learn/sklearn/linear_model/_least_angle.py
+sklearn.linear_model.LassoLarsIC: @_deprecate_positional_args, ./scikit-learn/sklearn/linear_model/_least_angle.py
+sklearn.linear_model: @_deprecate_positional_args, ./scikit-learn/sklearn/linear_model/_logistic.py
+sklearn.linear_model.LogisticRegression: @_deprecate_positional_args, ./scikit-learn/sklearn/linear_model/_logistic.py
+sklearn.linear_model.LogisticRegressionCV: @_deprecate_positional_args, ./scikit-learn/sklearn/linear_model/_logistic.py
+sklearn.linear_model.orthogonal_mp(): @_deprecate_positional_args, ./scikit-learn/sklearn/linear_model/_omp.py
+sklearn.linear_model.orthogonal_mp_gram(): @_deprecate_positional_args, ./scikit-learn/sklearn/linear_model/_omp.py
+sklearn.linear_model: @_deprecate_positional_args, ./scikit-learn/sklearn/linear_model/_omp.py
+sklearn.linear_model.OrthogonalMatchingPursuit: @_deprecate_positional_args, ./scikit-learn/sklearn/linear_model/_omp.py
+sklearn.linear_model.OrthogonalMatchingPursuitCV: @_deprecate_positional_args, ./scikit-learn/sklearn/linear_model/_omp.py
+sklearn.linear_model: @_deprecate_positional_args, ./scikit-learn/sklearn/linear_model/_passive_aggressive.py
+sklearn.linear_model.PassiveAggressiveClassifier: @_deprecate_positional_args, ./scikit-learn/sklearn/linear_model/_passive_aggressive.py
+sklearn.linear_model.PassiveAggressiveRegressor: @_deprecate_positional_args, ./scikit-learn/sklearn/linear_model/_passive_aggressive.py
+sklearn.linear_model: @_deprecate_positional_args, ./scikit-learn/sklearn/linear_model/_perceptron.py
+sklearn.linear_model.Perceptron: @_deprecate_positional_args, ./scikit-learn/sklearn/linear_model/_perceptron.py
+sklearn.linear_model: @_deprecate_positional_args, ./scikit-learn/sklearn/linear_model/_ransac.py
+sklearn.linear_model.RANSACRegressor: @_deprecate_positional_args, ./scikit-learn/sklearn/linear_model/_ransac.py
+sklearn.linear_model.ridge_regression(): @_deprecate_positional_args, ./scikit-learn/sklearn/linear_model/_ridge.py
+sklearn.linear_model: @_deprecate_positional_args, ./scikit-learn/sklearn/linear_model/_ridge.py
+sklearn.linear_model._BaseRidge: @_deprecate_positional_args, ./scikit-learn/sklearn/linear_model/_ridge.py
+sklearn.linear_model.Ridge: @_deprecate_positional_args, ./scikit-learn/sklearn/linear_model/_ridge.py
+sklearn.linear_model.RidgeClassifier: @_deprecate_positional_args, ./scikit-learn/sklearn/linear_model/_ridge.py
+sklearn.linear_model._RidgeGCV: @_deprecate_positional_args, ./scikit-learn/sklearn/linear_model/_ridge.py
+sklearn.linear_model._BaseRidgeCV: @_deprecate_positional_args, ./scikit-learn/sklearn/linear_model/_ridge.py
+sklearn.linear_model.RidgeClassifierCV: @_deprecate_positional_args, ./scikit-learn/sklearn/linear_model/_ridge.py
+sklearn.linear_model.sag_solver(): @_deprecate_positional_args, ./scikit-learn/sklearn/linear_model/_sag.py
+sklearn.linear_model.SGDRegressor: ~ .. deprecated:: 0.23 attribute ``average_coef_`` was deprecated in version 0.23 and will be removed in 0.25. .. deprecated:: 0.23 attribute ``average_intercept_`` was deprecated in version 0.23 and will be removed in 0.25., @_deprecate_positional_args, ./scikit-learn/sklearn/linear_model/_stochastic_gradient.py
+sklearn.linear_model: @_deprecate_positional_args, ./scikit-learn/sklearn/linear_model/_stochastic_gradient.py
+sklearn.linear_model.BaseSGD: @_deprecate_positional_args, ./scikit-learn/sklearn/linear_model/_stochastic_gradient.py
+sklearn.linear_model.BaseSGD.standard_coef_(): @deprecated. # Attribute standard_coef_ was deprecated in version 0.23 and will be removed in 0.25., ./scikit-learn/sklearn/linear_model/_stochastic_gradient.py
+sklearn.linear_model.BaseSGD.standard_intercept_(): @deprecated. # Attribute standard_intercept_ was deprecated in version 0.23 and will be removed in 0.25., ./scikit-learn/sklearn/linear_model/_stochastic_gradient.py
+sklearn.linear_model.BaseSGD.average_coef_(): @deprecated. # Attribute average_coef_ was deprecated in version 0.23 and will be removed in 0.25., ./scikit-learn/sklearn/linear_model/_stochastic_gradient.py
+sklearn.linear_model.BaseSGD.average_intercept_(): @deprecated. # Attribute average_intercept_ was deprecated in version 0.23 and will be removed in 0.25., ./scikit-learn/sklearn/linear_model/_stochastic_gradient.py
+sklearn.linear_model.BaseSGDClassifier: @_deprecate_positional_args, ./scikit-learn/sklearn/linear_model/_stochastic_gradient.py
+sklearn.linear_model.SGDClassifier: @_deprecate_positional_args, ./scikit-learn/sklearn/linear_model/_stochastic_gradient.py
+sklearn.linear_model.BaseSGDRegressor: @_deprecate_positional_args, ./scikit-learn/sklearn/linear_model/_stochastic_gradient.py
+sklearn.linear_model: @_deprecate_positional_args, ./scikit-learn/sklearn/linear_model/_theil_sen.py
+sklearn.linear_model.TheilSenRegressor: @_deprecate_positional_args, ./scikit-learn/sklearn/linear_model/_theil_sen.py
+sklearn.manifold: @_deprecate_positional_args, ./scikit-learn/sklearn/manifold/_isomap.py
+sklearn.manifold.Isomap: @_deprecate_positional_args, ./scikit-learn/sklearn/manifold/_isomap.py
+sklearn.manifold.locally_linear_embedding(): @_deprecate_positional_args, ./scikit-learn/sklearn/manifold/_locally_linear.py
+sklearn.manifold: @_deprecate_positional_args, ./scikit-learn/sklearn/manifold/_locally_linear.py
+sklearn.manifold.LocallyLinearEmbedding: @_deprecate_positional_args, ./scikit-learn/sklearn/manifold/_locally_linear.py
+sklearn.manifold.smacof(): @_deprecate_positional_args, ./scikit-learn/sklearn/manifold/_mds.py
+sklearn.manifold: @_deprecate_positional_args, ./scikit-learn/sklearn/manifold/_mds.py
+sklearn.manifold.MDS: @_deprecate_positional_args, ./scikit-learn/sklearn/manifold/_mds.py
+sklearn.manifold.MDS._pairwise(): @deprecated. # Attribute _pairwise was deprecated in version 0.24 and will be removed in 0.26., ./scikit-learn/sklearn/manifold/_mds.py
+sklearn.manifold.spectral_embedding(): @_deprecate_positional_args, ./scikit-learn/sklearn/manifold/_spectral_embedding.py
+sklearn.manifold: @_deprecate_positional_args, ./scikit-learn/sklearn/manifold/_spectral_embedding.py
+sklearn.manifold.SpectralEmbedding: @_deprecate_positional_args, ./scikit-learn/sklearn/manifold/_spectral_embedding.py
+sklearn.manifold.SpectralEmbedding._pairwise(): @deprecated. # Attribute _pairwise was deprecated in version 0.24 and will be removed in 0.26., ./scikit-learn/sklearn/manifold/_spectral_embedding.py
+sklearn.manifold.TSNE: ~ .. versionadded:: 0.24 added to provide backward compatibility during deprecation of legacy squaring behavior. .. deprecated:: 0.24 legacy squaring behavior was deprecated in 0.24. the ``'legacy'`` value will be removed in 0.26, at which point the default value will change to ``true``., @_deprecate_positional_args, ./scikit-learn/sklearn/manifold/_t_sne.py
+sklearn.manifold.trustworthiness(): @_deprecate_positional_args, ./scikit-learn/sklearn/manifold/_t_sne.py
+sklearn.manifold: @_deprecate_positional_args, ./scikit-learn/sklearn/manifold/_t_sne.py
+sklearn.metrics.cluster.consensus_score(): @_deprecate_positional_args, ./scikit-learn/sklearn/metrics/cluster/_bicluster.py
+sklearn.metrics.cluster.contingency_matrix(): @_deprecate_positional_args, ./scikit-learn/sklearn/metrics/cluster/_supervised.py
+sklearn.metrics.cluster.homogeneity_completeness_v_measure(): @_deprecate_positional_args, ./scikit-learn/sklearn/metrics/cluster/_supervised.py
+sklearn.metrics.cluster.v_measure_score(): @_deprecate_positional_args, ./scikit-learn/sklearn/metrics/cluster/_supervised.py
+sklearn.metrics.cluster.mutual_info_score(): @_deprecate_positional_args, ./scikit-learn/sklearn/metrics/cluster/_supervised.py
+sklearn.metrics.cluster.adjusted_mutual_info_score(): @_deprecate_positional_args, ./scikit-learn/sklearn/metrics/cluster/_supervised.py
+sklearn.metrics.cluster.normalized_mutual_info_score(): @_deprecate_positional_args, ./scikit-learn/sklearn/metrics/cluster/_supervised.py
+sklearn.metrics.cluster.fowlkes_mallows_score(): @_deprecate_positional_args, ./scikit-learn/sklearn/metrics/cluster/_supervised.py
+sklearn.metrics.cluster.silhouette_score(): @_deprecate_positional_args, ./scikit-learn/sklearn/metrics/cluster/_unsupervised.py
+sklearn.metrics.cluster.silhouette_samples(): @_deprecate_positional_args, ./scikit-learn/sklearn/metrics/cluster/_unsupervised.py
+sklearn.metrics.check_pairwise_arrays(): @_deprecate_positional_args, ./scikit-learn/sklearn/metrics/pairwise.py
+sklearn.metrics.euclidean_distances(): @_deprecate_positional_args, ./scikit-learn/sklearn/metrics/pairwise.py
+sklearn.metrics.nan_euclidean_distances(): @_deprecate_positional_args, ./scikit-learn/sklearn/metrics/pairwise.py
+sklearn.metrics.pairwise_distances_argmin_min(): @_deprecate_positional_args, ./scikit-learn/sklearn/metrics/pairwise.py
+sklearn.metrics.pairwise_distances_argmin(): @_deprecate_positional_args, ./scikit-learn/sklearn/metrics/pairwise.py
+sklearn.metrics.manhattan_distances(): @_deprecate_positional_args, ./scikit-learn/sklearn/metrics/pairwise.py
+sklearn.metrics.paired_distances(): @_deprecate_positional_args, ./scikit-learn/sklearn/metrics/pairwise.py
+sklearn.metrics.pairwise_distances_chunked(): @_deprecate_positional_args, ./scikit-learn/sklearn/metrics/pairwise.py
+sklearn.metrics.pairwise_distances(): @_deprecate_positional_args, ./scikit-learn/sklearn/metrics/pairwise.py
+sklearn.metrics.pairwise_kernels(): @_deprecate_positional_args, ./scikit-learn/sklearn/metrics/pairwise.py
+sklearn.metrics.accuracy_score(): @_deprecate_positional_args, ./scikit-learn/sklearn/metrics/_classification.py
+sklearn.metrics.confusion_matrix(): @_deprecate_positional_args, ./scikit-learn/sklearn/metrics/_classification.py
+sklearn.metrics.multilabel_confusion_matrix(): @_deprecate_positional_args, ./scikit-learn/sklearn/metrics/_classification.py
+sklearn.metrics.cohen_kappa_score(): @_deprecate_positional_args, ./scikit-learn/sklearn/metrics/_classification.py
+sklearn.metrics.jaccard_score(): @_deprecate_positional_args, ./scikit-learn/sklearn/metrics/_classification.py
+sklearn.metrics.matthews_corrcoef(): @_deprecate_positional_args, ./scikit-learn/sklearn/metrics/_classification.py
+sklearn.metrics.zero_one_loss(): @_deprecate_positional_args, ./scikit-learn/sklearn/metrics/_classification.py
+sklearn.metrics.f1_score(): @_deprecate_positional_args, ./scikit-learn/sklearn/metrics/_classification.py
+sklearn.metrics.fbeta_score(): @_deprecate_positional_args, ./scikit-learn/sklearn/metrics/_classification.py
+sklearn.metrics.precision_recall_fscore_support(): @_deprecate_positional_args, ./scikit-learn/sklearn/metrics/_classification.py
+sklearn.metrics.precision_score(): @_deprecate_positional_args, ./scikit-learn/sklearn/metrics/_classification.py
+sklearn.metrics.recall_score(): @_deprecate_positional_args, ./scikit-learn/sklearn/metrics/_classification.py
+sklearn.metrics.balanced_accuracy_score(): @_deprecate_positional_args, ./scikit-learn/sklearn/metrics/_classification.py
+sklearn.metrics.classification_report(): @_deprecate_positional_args, ./scikit-learn/sklearn/metrics/_classification.py
+sklearn.metrics.hamming_loss(): @_deprecate_positional_args, ./scikit-learn/sklearn/metrics/_classification.py
+sklearn.metrics.log_loss(): @_deprecate_positional_args, ./scikit-learn/sklearn/metrics/_classification.py
+sklearn.metrics.hinge_loss(): @_deprecate_positional_args, ./scikit-learn/sklearn/metrics/_classification.py
+sklearn.metrics.brier_score_loss(): @_deprecate_positional_args, ./scikit-learn/sklearn/metrics/_classification.py
+sklearn.metrics._plot: @_deprecate_positional_args, ./scikit-learn/sklearn/metrics/_plot/confusion_matrix.py
+sklearn.metrics._plot.plot_confusion_matrix(): @_deprecate_positional_args, ./scikit-learn/sklearn/metrics/_plot/confusion_matrix.py
+sklearn.metrics._plot.ConfusionMatrixDisplay: @_deprecate_positional_args, ./scikit-learn/sklearn/metrics/_plot/confusion_matrix.py
+sklearn.metrics._plot.ConfusionMatrixDisplay.plot(): @_deprecate_positional_args, ./scikit-learn/sklearn/metrics/_plot/confusion_matrix.py
+sklearn.metrics._plot: @_deprecate_positional_args, ./scikit-learn/sklearn/metrics/_plot/precision_recall_curve.py
+sklearn.metrics._plot.plot_precision_recall_curve(): @_deprecate_positional_args, ./scikit-learn/sklearn/metrics/_plot/precision_recall_curve.py
+sklearn.metrics._plot.PrecisionRecallDisplay: @_deprecate_positional_args, ./scikit-learn/sklearn/metrics/_plot/precision_recall_curve.py
+sklearn.metrics._plot.PrecisionRecallDisplay.plot(): @_deprecate_positional_args, ./scikit-learn/sklearn/metrics/_plot/precision_recall_curve.py
+sklearn.metrics._plot: @_deprecate_positional_args, ./scikit-learn/sklearn/metrics/_plot/roc_curve.py
+sklearn.metrics._plot.plot_roc_curve(): @_deprecate_positional_args, ./scikit-learn/sklearn/metrics/_plot/roc_curve.py
+sklearn.metrics._plot.RocCurveDisplay: @_deprecate_positional_args, ./scikit-learn/sklearn/metrics/_plot/roc_curve.py
+sklearn.metrics._plot.RocCurveDisplay.plot(): @_deprecate_positional_args, ./scikit-learn/sklearn/metrics/_plot/roc_curve.py
+sklearn.metrics.average_precision_score(): @_deprecate_positional_args, ./scikit-learn/sklearn/metrics/_ranking.py
+sklearn.metrics.roc_auc_score(): @_deprecate_positional_args, ./scikit-learn/sklearn/metrics/_ranking.py
+sklearn.metrics.precision_recall_curve(): @_deprecate_positional_args, ./scikit-learn/sklearn/metrics/_ranking.py
+sklearn.metrics.roc_curve(): @_deprecate_positional_args, ./scikit-learn/sklearn/metrics/_ranking.py
+sklearn.metrics.label_ranking_average_precision_score(): @_deprecate_positional_args, ./scikit-learn/sklearn/metrics/_ranking.py
+sklearn.metrics.coverage_error(): @_deprecate_positional_args, ./scikit-learn/sklearn/metrics/_ranking.py
+sklearn.metrics.label_ranking_loss(): @_deprecate_positional_args, ./scikit-learn/sklearn/metrics/_ranking.py
+sklearn.metrics.dcg_score(): @_deprecate_positional_args, ./scikit-learn/sklearn/metrics/_ranking.py
+sklearn.metrics.ndcg_score(): @_deprecate_positional_args, ./scikit-learn/sklearn/metrics/_ranking.py
+sklearn.metrics.mean_absolute_error(): @_deprecate_positional_args, ./scikit-learn/sklearn/metrics/_regression.py
+sklearn.metrics.mean_squared_error(): @_deprecate_positional_args, ./scikit-learn/sklearn/metrics/_regression.py
+sklearn.metrics.mean_squared_log_error(): @_deprecate_positional_args, ./scikit-learn/sklearn/metrics/_regression.py
+sklearn.metrics.median_absolute_error(): @_deprecate_positional_args, ./scikit-learn/sklearn/metrics/_regression.py
+sklearn.metrics.explained_variance_score(): @_deprecate_positional_args, ./scikit-learn/sklearn/metrics/_regression.py
+sklearn.metrics.r2_score(): @_deprecate_positional_args, ./scikit-learn/sklearn/metrics/_regression.py
+sklearn.metrics.mean_tweedie_deviance(): @_deprecate_positional_args, ./scikit-learn/sklearn/metrics/_regression.py
+sklearn.metrics.mean_poisson_deviance(): @_deprecate_positional_args, ./scikit-learn/sklearn/metrics/_regression.py
+sklearn.metrics.mean_gamma_deviance(): @_deprecate_positional_args, ./scikit-learn/sklearn/metrics/_regression.py
+sklearn.metrics.check_scoring(): @_deprecate_positional_args, ./scikit-learn/sklearn/metrics/_scorer.py
+sklearn.metrics.make_scorer(): @_deprecate_positional_args, ./scikit-learn/sklearn/metrics/_scorer.py
+sklearn.mixture: @_deprecate_positional_args, ./scikit-learn/sklearn/mixture/_bayesian_mixture.py
+sklearn.mixture.BayesianGaussianMixture: @_deprecate_positional_args, ./scikit-learn/sklearn/mixture/_bayesian_mixture.py
+sklearn.mixture: @_deprecate_positional_args, ./scikit-learn/sklearn/mixture/_gaussian_mixture.py
+sklearn.mixture.GaussianMixture: @_deprecate_positional_args, ./scikit-learn/sklearn/mixture/_gaussian_mixture.py
+sklearn.model_selection: @_deprecate_positional_args, ./scikit-learn/sklearn/model_selection/_search.py
+sklearn.model_selection.fit_grid_point(): @deprecated. # fit_grid_point is deprecated in version 0.23 and will be removed in version 0.25, ./scikit-learn/sklearn/model_selection/_search.py
+sklearn.model_selection.ParameterSampler: @_deprecate_positional_args, ./scikit-learn/sklearn/model_selection/_search.py
+sklearn.model_selection.BaseSearchCV: @_deprecate_positional_args, ./scikit-learn/sklearn/model_selection/_search.py
+sklearn.model_selection.BaseSearchCV._pairwise(): @deprecated. # Attribute _pairwise was deprecated in version 0.24 and will be removed in 0.26., ./scikit-learn/sklearn/model_selection/_search.py
+sklearn.model_selection.BaseSearchCV.fit(): @_deprecate_positional_args, ./scikit-learn/sklearn/model_selection/_search.py
+sklearn.model_selection.GridSearchCV: @_deprecate_positional_args, ./scikit-learn/sklearn/model_selection/_search.py
+sklearn.model_selection.RandomizedSearchCV: @_deprecate_positional_args, ./scikit-learn/sklearn/model_selection/_search.py
+sklearn.model_selection.HalvingGridSearchCV: ~ this estimator is still **experimental** for now: the predictions and the api might change without any deprecation cycle. to use it, you need to explicitly import ``enable_halving_search_cv``::, ./scikit-learn/sklearn/model_selection/_search_successive_halving.py
+sklearn.model_selection.HalvingRandomSearchCV: ~ this estimator is still **experimental** for now: the predictions and the api might change without any deprecation cycle. to use it, you need to explicitly import ``enable_halving_search_cv``::, ./scikit-learn/sklearn/model_selection/_search_successive_halving.py
+sklearn.model_selection.check_cv(): @_deprecate_positional_args, ./scikit-learn/sklearn/model_selection/_split.py
+sklearn.model_selection._BaseKFold: @_deprecate_positional_args, ./scikit-learn/sklearn/model_selection/_split.py
+sklearn.model_selection.KFold: @_deprecate_positional_args, ./scikit-learn/sklearn/model_selection/_split.py
+sklearn.model_selection.StratifiedKFold: @_deprecate_positional_args, ./scikit-learn/sklearn/model_selection/_split.py
+sklearn.model_selection.TimeSeriesSplit: @_deprecate_positional_args, ./scikit-learn/sklearn/model_selection/_split.py
+sklearn.model_selection._RepeatedSplits: @_deprecate_positional_args, ./scikit-learn/sklearn/model_selection/_split.py
+sklearn.model_selection.RepeatedKFold: @_deprecate_positional_args, ./scikit-learn/sklearn/model_selection/_split.py
+sklearn.model_selection.RepeatedStratifiedKFold: @_deprecate_positional_args, ./scikit-learn/sklearn/model_selection/_split.py
+sklearn.model_selection.BaseShuffleSplit: @_deprecate_positional_args, ./scikit-learn/sklearn/model_selection/_split.py
+sklearn.model_selection.ShuffleSplit: @_deprecate_positional_args, ./scikit-learn/sklearn/model_selection/_split.py
+sklearn.model_selection.GroupShuffleSplit: @_deprecate_positional_args, ./scikit-learn/sklearn/model_selection/_split.py
+sklearn.model_selection.StratifiedShuffleSplit: @_deprecate_positional_args, ./scikit-learn/sklearn/model_selection/_split.py
+sklearn.model_selection.cross_validate(): @_deprecate_positional_args, ./scikit-learn/sklearn/model_selection/_validation.py
+sklearn.model_selection.cross_val_score(): @_deprecate_positional_args, ./scikit-learn/sklearn/model_selection/_validation.py
+sklearn.model_selection.cross_val_predict(): @_deprecate_positional_args, ./scikit-learn/sklearn/model_selection/_validation.py
+sklearn.model_selection.permutation_test_score(): @_deprecate_positional_args, ./scikit-learn/sklearn/model_selection/_validation.py
+sklearn.model_selection.learning_curve(): @_deprecate_positional_args, ./scikit-learn/sklearn/model_selection/_validation.py
+sklearn.model_selection.validation_curve(): @_deprecate_positional_args, ./scikit-learn/sklearn/model_selection/_validation.py
+sklearn.OneVsOneClassifier: ~ .. deprecated:: 0.24 the _pairwise attribute is deprecated in 0.24. from 0.26 and onward, `pairwise_indices_` will use the pairwise estimator tag instead., @_deprecate_positional_args, ./scikit-learn/sklearn/multiclass.py
+sklearn.OneVsRestClassifier: @_deprecate_positional_args, ./scikit-learn/sklearn/multiclass.py
+sklearn.OneVsRestClassifier._pairwise(): @deprecated. # Attribute _pairwise was deprecated in version 0.24 and will be removed in 0.26., ./scikit-learn/sklearn/multiclass.py
+sklearn.OneVsOneClassifier._pairwise(): @deprecated. # Attribute _pairwise was deprecated in version 0.24 and will be removed in 0.26., ./scikit-learn/sklearn/multiclass.py
+sklearn.OutputCodeClassifier: @_deprecate_positional_args, ./scikit-learn/sklearn/multiclass.py
+sklearn._MultiOutputEstimator: @_deprecate_positional_args, ./scikit-learn/sklearn/multioutput.py
+sklearn.MultiOutputRegressor: @_deprecate_positional_args, ./scikit-learn/sklearn/multioutput.py
+sklearn.MultiOutputClassifier: @_deprecate_positional_args, ./scikit-learn/sklearn/multioutput.py
+sklearn._BaseChain: @_deprecate_positional_args, ./scikit-learn/sklearn/multioutput.py
+sklearn.MultinomialNB: ~ .. deprecated:: 0.24 ``coef_`` is deprecated in 0.24 and will be removed in 0.26. .. deprecated:: 0.24 ``intercept_`` is deprecated in 0.24 and will be removed in 0.26., @_deprecate_positional_args, ./scikit-learn/sklearn/naive_bayes.py
+sklearn.ComplementNB: ~ .. deprecated:: 0.24 ``coef_`` is deprecated in 0.24 and will be removed in 0.26. .. deprecated:: 0.24 ``coef_`` is deprecated in 0.24 and will be removed in 0.26., @_deprecate_positional_args, ./scikit-learn/sklearn/naive_bayes.py
+sklearn.GaussianNB: @_deprecate_positional_args, ./scikit-learn/sklearn/naive_bayes.py
+sklearn._BaseDiscreteNB.coef_(): @deprecated. # Attribute coef_ was deprecated in version 0.24 and will be removed in 0.26., ./scikit-learn/sklearn/naive_bayes.py
+sklearn._BaseDiscreteNB.intercept_(): @deprecated. # Attribute intercept_ was deprecated in version 0.24 and will be removed in 0.26., ./scikit-learn/sklearn/naive_bayes.py
+sklearn.BernoulliNB: @_deprecate_positional_args, ./scikit-learn/sklearn/naive_bayes.py
+sklearn.CategoricalNB: @_deprecate_positional_args, ./scikit-learn/sklearn/naive_bayes.py
+sklearn.neighbors.NeighborsBase._pairwise(): @deprecated. # Attribute _pairwise was deprecated in version 0.24 and will be removed in 0.26., ./scikit-learn/sklearn/neighbors/_base.py
+sklearn.neighbors: @_deprecate_positional_args, ./scikit-learn/sklearn/neighbors/_classification.py
+sklearn.neighbors.KNeighborsClassifier: @_deprecate_positional_args, ./scikit-learn/sklearn/neighbors/_classification.py
+sklearn.neighbors.RadiusNeighborsClassifier: @_deprecate_positional_args, ./scikit-learn/sklearn/neighbors/_classification.py
+sklearn.neighbors.kneighbors_graph(): @_deprecate_positional_args, ./scikit-learn/sklearn/neighbors/_graph.py
+sklearn.neighbors.radius_neighbors_graph(): @_deprecate_positional_args, ./scikit-learn/sklearn/neighbors/_graph.py
+sklearn.neighbors: @_deprecate_positional_args, ./scikit-learn/sklearn/neighbors/_graph.py
+sklearn.neighbors.KNeighborsTransformer: @_deprecate_positional_args, ./scikit-learn/sklearn/neighbors/_graph.py
+sklearn.neighbors.RadiusNeighborsTransformer: @_deprecate_positional_args, ./scikit-learn/sklearn/neighbors/_graph.py
+sklearn.neighbors: @_deprecate_positional_args, ./scikit-learn/sklearn/neighbors/_kde.py
+sklearn.neighbors.KernelDensity: @_deprecate_positional_args, ./scikit-learn/sklearn/neighbors/_kde.py
+sklearn.neighbors: @_deprecate_positional_args, ./scikit-learn/sklearn/neighbors/_lof.py
+sklearn.neighbors.LocalOutlierFactor: @_deprecate_positional_args, ./scikit-learn/sklearn/neighbors/_lof.py
+sklearn.neighbors: @_deprecate_positional_args, ./scikit-learn/sklearn/neighbors/_nca.py
+sklearn.neighbors.NeighborhoodComponentsAnalysis: @_deprecate_positional_args, ./scikit-learn/sklearn/neighbors/_nca.py
+sklearn.neighbors.NearestCentroid: ~ .. versionchanged:: 0.19 ``metric='precomputed'`` was deprecated and now raises an error, @_deprecate_positional_args, ./scikit-learn/sklearn/neighbors/_nearest_centroid.py
+sklearn.neighbors: @_deprecate_positional_args, ./scikit-learn/sklearn/neighbors/_nearest_centroid.py
+sklearn.neighbors: @_deprecate_positional_args, ./scikit-learn/sklearn/neighbors/_regression.py
+sklearn.neighbors.KNeighborsRegressor: @_deprecate_positional_args, ./scikit-learn/sklearn/neighbors/_regression.py
+sklearn.neighbors.KNeighborsRegressor._pairwise(): @deprecated. # Attribute _pairwise was deprecated in version 0.24 and will be removed in 0.26., ./scikit-learn/sklearn/neighbors/_regression.py
+sklearn.neighbors.RadiusNeighborsRegressor: @_deprecate_positional_args, ./scikit-learn/sklearn/neighbors/_regression.py
+sklearn.neighbors: @_deprecate_positional_args, ./scikit-learn/sklearn/neighbors/_unsupervised.py
+sklearn.neighbors.NearestNeighbors: @_deprecate_positional_args, ./scikit-learn/sklearn/neighbors/_unsupervised.py
+sklearn.neural_network: @_deprecate_positional_args, ./scikit-learn/sklearn/neural_network/_multilayer_perceptron.py
+sklearn.neural_network.MLPClassifier: @_deprecate_positional_args, ./scikit-learn/sklearn/neural_network/_multilayer_perceptron.py
+sklearn.neural_network.MLPRegressor: @_deprecate_positional_args, ./scikit-learn/sklearn/neural_network/_multilayer_perceptron.py
+sklearn.neural_network: @_deprecate_positional_args, ./scikit-learn/sklearn/neural_network/_rbm.py
+sklearn.neural_network.BernoulliRBM: @_deprecate_positional_args, ./scikit-learn/sklearn/neural_network/_rbm.py
+sklearn.FeatureUnion: ~ .. versionchanged:: 0.22 deprecated `none` as a transformer in favor of 'drop'., @_deprecate_positional_args, ./scikit-learn/sklearn/pipeline.py
+sklearn.Pipeline: @_deprecate_positional_args, ./scikit-learn/sklearn/pipeline.py
+sklearn.Pipeline._pairwise(): @deprecated. # Attribute _pairwise was deprecated in version 0.24 and will be removed in 0.26., ./scikit-learn/sklearn/pipeline.py
+sklearn.preprocessing.scale(): @_deprecate_positional_args, ./scikit-learn/sklearn/preprocessing/_data.py
+sklearn.preprocessing: @_deprecate_positional_args, ./scikit-learn/sklearn/preprocessing/_data.py
+sklearn.preprocessing.minmax_scale(): @_deprecate_positional_args, ./scikit-learn/sklearn/preprocessing/_data.py
+sklearn.preprocessing.maxabs_scale(): @_deprecate_positional_args, ./scikit-learn/sklearn/preprocessing/_data.py
+sklearn.preprocessing.robust_scale(): @_deprecate_positional_args, ./scikit-learn/sklearn/preprocessing/_data.py
+sklearn.preprocessing.normalize(): @_deprecate_positional_args, ./scikit-learn/sklearn/preprocessing/_data.py
+sklearn.preprocessing.binarize(): @_deprecate_positional_args, ./scikit-learn/sklearn/preprocessing/_data.py
+sklearn.preprocessing.quantile_transform(): @_deprecate_positional_args, ./scikit-learn/sklearn/preprocessing/_data.py
+sklearn.preprocessing.power_transform(): @_deprecate_positional_args, ./scikit-learn/sklearn/preprocessing/_data.py
+sklearn.preprocessing.MinMaxScaler: @_deprecate_positional_args, ./scikit-learn/sklearn/preprocessing/_data.py
+sklearn.preprocessing.StandardScaler: @_deprecate_positional_args, ./scikit-learn/sklearn/preprocessing/_data.py
+sklearn.preprocessing.MaxAbsScaler: @_deprecate_positional_args, ./scikit-learn/sklearn/preprocessing/_data.py
+sklearn.preprocessing.RobustScaler: @_deprecate_positional_args, ./scikit-learn/sklearn/preprocessing/_data.py
+sklearn.preprocessing.PolynomialFeatures: @_deprecate_positional_args, ./scikit-learn/sklearn/preprocessing/_data.py
+sklearn.preprocessing.Normalizer: @_deprecate_positional_args, ./scikit-learn/sklearn/preprocessing/_data.py
+sklearn.preprocessing.Binarizer: @_deprecate_positional_args, ./scikit-learn/sklearn/preprocessing/_data.py
+sklearn.preprocessing.KernelCenterer._pairwise(): @deprecated. # Attribute _pairwise was deprecated in version 0.24 and will be removed in 0.26., ./scikit-learn/sklearn/preprocessing/_data.py
+sklearn.preprocessing.QuantileTransformer: @_deprecate_positional_args, ./scikit-learn/sklearn/preprocessing/_data.py
+sklearn.preprocessing.PowerTransformer: @_deprecate_positional_args, ./scikit-learn/sklearn/preprocessing/_data.py
+sklearn.preprocessing: @_deprecate_positional_args, ./scikit-learn/sklearn/preprocessing/_discretization.py
+sklearn.preprocessing.KBinsDiscretizer: @_deprecate_positional_args, ./scikit-learn/sklearn/preprocessing/_discretization.py
+sklearn.preprocessing: @_deprecate_positional_args, ./scikit-learn/sklearn/preprocessing/_encoders.py
+sklearn.preprocessing.OneHotEncoder: @_deprecate_positional_args, ./scikit-learn/sklearn/preprocessing/_encoders.py
+sklearn.preprocessing.OrdinalEncoder: @_deprecate_positional_args, ./scikit-learn/sklearn/preprocessing/_encoders.py
+sklearn.preprocessing: @_deprecate_positional_args, ./scikit-learn/sklearn/preprocessing/_function_transformer.py
+sklearn.preprocessing.FunctionTransformer: @_deprecate_positional_args, ./scikit-learn/sklearn/preprocessing/_function_transformer.py
+sklearn.preprocessing: @_deprecate_positional_args, ./scikit-learn/sklearn/preprocessing/_label.py
+sklearn.preprocessing.label_binarize(): @_deprecate_positional_args, ./scikit-learn/sklearn/preprocessing/_label.py
+sklearn.preprocessing.LabelBinarizer: @_deprecate_positional_args, ./scikit-learn/sklearn/preprocessing/_label.py
+sklearn.preprocessing.MultiLabelBinarizer: @_deprecate_positional_args, ./scikit-learn/sklearn/preprocessing/_label.py
+sklearn.johnson_lindenstrauss_min_dim(): @_deprecate_positional_args, ./scikit-learn/sklearn/random_projection.py
+sklearn.GaussianRandomProjection: @_deprecate_positional_args, ./scikit-learn/sklearn/random_projection.py
+sklearn.SparseRandomProjection: @_deprecate_positional_args, ./scikit-learn/sklearn/random_projection.py
+sklearn.semi_supervised: @_deprecate_positional_args, ./scikit-learn/sklearn/semi_supervised/_label_propagation.py
+sklearn.semi_supervised.BaseLabelPropagation: @_deprecate_positional_args, ./scikit-learn/sklearn/semi_supervised/_label_propagation.py
+sklearn.semi_supervised.LabelPropagation: @_deprecate_positional_args, ./scikit-learn/sklearn/semi_supervised/_label_propagation.py
+sklearn.semi_supervised.LabelSpreading: @_deprecate_positional_args, ./scikit-learn/sklearn/semi_supervised/_label_propagation.py
+sklearn.svm.BaseLibSVM._pairwise(): @deprecated. # Attribute _pairwise was deprecated in version 0.24 and will be removed in 0.26., ./scikit-learn/sklearn/svm/_base.py
+sklearn.svm.l1_min_c(): @_deprecate_positional_args, ./scikit-learn/sklearn/svm/_bounds.py
+sklearn.svm.SVC: ~ .. versionchanged:: 0.17 deprecated *decision_function_shape='ovo' and none*., @_deprecate_positional_args, ./scikit-learn/sklearn/svm/_classes.py
+sklearn.svm.NuSVC: ~ .. versionchanged:: 0.17 deprecated *decision_function_shape='ovo' and none*., @_deprecate_positional_args, ./scikit-learn/sklearn/svm/_classes.py
+sklearn.svm: @_deprecate_positional_args, ./scikit-learn/sklearn/svm/_classes.py
+sklearn.svm.LinearSVC: @_deprecate_positional_args, ./scikit-learn/sklearn/svm/_classes.py
+sklearn.svm.LinearSVR: @_deprecate_positional_args, ./scikit-learn/sklearn/svm/_classes.py
+sklearn.svm.SVR: @_deprecate_positional_args, ./scikit-learn/sklearn/svm/_classes.py
+sklearn.svm.SVR.probA_(): @deprecated. # The probA_ attribute is deprecated in version 0.23 and will be removed in version 0.25., ./scikit-learn/sklearn/svm/_classes.py
+sklearn.svm.SVR.probB_(): @deprecated. # The probB_ attribute is deprecated in version 0.23 and will be removed in version 0.25., ./scikit-learn/sklearn/svm/_classes.py
+sklearn.svm.NuSVR: @_deprecate_positional_args, ./scikit-learn/sklearn/svm/_classes.py
+sklearn.svm.OneClassSVM: @_deprecate_positional_args, ./scikit-learn/sklearn/svm/_classes.py
+sklearn.svm.OneClassSVM.probA_(): @deprecated. # The probA_ attribute is deprecated in version 0.23 and will be removed in version 0.25., ./scikit-learn/sklearn/svm/_classes.py
+sklearn.svm.OneClassSVM.probB_(): @deprecated. # The probB_ attribute is deprecated in version 0.23 and will be removed in version 0.25., ./scikit-learn/sklearn/svm/_classes.py
+sklearn.tree.DecisionTreeClassifier: ~ .. deprecated:: 0.19 ``min_impurity_split`` has been deprecated in favor of ``min_impurity_decrease`` in 0.19. the default value of ``min_impurity_split`` has changed from 1e-7 to 0 in 0.23 and it will be removed in 0.25. use ``min_impurity_decrease`` instead., @_deprecate_positional_args, ./scikit-learn/sklearn/tree/_classes.py
+sklearn.tree.DecisionTreeRegressor: ~ .. deprecated:: 0.19 ``min_impurity_split`` has been deprecated in favor of ``min_impurity_decrease`` in 0.19. the default value of ``min_impurity_split`` has changed from 1e-7 to 0 in 0.23 and it will be removed in 0.25. use ``min_impurity_decrease`` instead., @_deprecate_positional_args, ./scikit-learn/sklearn/tree/_classes.py
+sklearn.tree.ExtraTreeClassifier: ~ .. deprecated:: 0.19 ``min_impurity_split`` has been deprecated in favor of ``min_impurity_decrease`` in 0.19. the default value of ``min_impurity_split`` has changed from 1e-7 to 0 in 0.23 and it will be removed in 0.25. use ``min_impurity_decrease`` instead., @_deprecate_positional_args, ./scikit-learn/sklearn/tree/_classes.py
+sklearn.tree.ExtraTreeRegressor: ~ .. deprecated:: 0.19 ``min_impurity_split`` has been deprecated in favor of ``min_impurity_decrease`` in 0.19. the default value of ``min_impurity_split`` has changed from 1e-7 to 0 in 0.23 and it will be removed in 0.25. use ``min_impurity_decrease`` instead., @_deprecate_positional_args, ./scikit-learn/sklearn/tree/_classes.py
+sklearn.tree: @_deprecate_positional_args, ./scikit-learn/sklearn/tree/_classes.py
+sklearn.tree.BaseDecisionTree: @_deprecate_positional_args, ./scikit-learn/sklearn/tree/_classes.py
+sklearn.tree.DecisionTreeClassifier.fit(): ~x_idx_sorted : deprecated, default="deprecated" this parameter is deprecated and has no effect. it will be removed in v0.26. .. deprecated :: 0.24, ./scikit-learn/sklearn/tree/_classes.py
+sklearn.tree.DecisionTreeRegressor.fit(): ~x_idx_sorted : deprecated, default="deprecated" this parameter is deprecated and has no effect. it will be removed in v0.26. .. deprecated :: 0.24, ./scikit-learn/sklearn/tree/_classes.py
+sklearn.tree.plot_tree(): ~ .. deprecated:: 0.23 ``rotate`` is deprecated in 0.23 and will be removed in 0.25., @_deprecate_positional_args, ./scikit-learn/sklearn/tree/_export.py
+sklearn.tree.export_graphviz(): @_deprecate_positional_args, ./scikit-learn/sklearn/tree/_export.py
+sklearn.tree.export_text(): @_deprecate_positional_args, ./scikit-learn/sklearn/tree/_export.py
+sklearn.utils.compute_class_weight(): @_deprecate_positional_args, ./scikit-learn/sklearn/utils/class_weight.py
+sklearn.utils.compute_sample_weight(): @_deprecate_positional_args, ./scikit-learn/sklearn/utils/class_weight.py
+sklearn.utils.deprecated: ~decorator to mark a function or class as deprecated. the optional extra argument will be appended to the deprecation message and the docstring. note: to use this with the default value for extra, put in an empty of parentheses: >>> from sklearn.utils import deprecated >>> deprecated() <sklearn.utils.deprecation.deprecated object at ...> >>> @deprecated() ... def some_function(): pass parameters ---------- extra : str, default='' to be added to the deprecation messages., ./scikit-learn/sklearn/utils/deprecation.py
+sklearn.utils._is_deprecated(): ~helper to check if func is wrapped by our deprecated decorator, ./scikit-learn/sklearn/utils/deprecation.py
+sklearn.utils.deprecated._decorate_class():  warn - FutureWarning, ./scikit-learn/sklearn/utils/deprecation.py
+sklearn.utils.deprecated.wrapped():  warn - FutureWarning, ./scikit-learn/sklearn/utils/deprecation.py
+sklearn.utils.deprecated._decorate_fun():  warn - FutureWarning, ./scikit-learn/sklearn/utils/deprecation.py
+sklearn.utils.deprecated._decorate_property():  warn - FutureWarning, ./scikit-learn/sklearn/utils/deprecation.py
+sklearn.utils.check_supervised_y_no_nan():  warn - FutureWarning, ./scikit-learn/sklearn/utils/estimator_checks.py
+sklearn.utils.parametrize_with_checks(): ~ .. versionchanged:: 0.24 passing a class was deprecated in version 0.23, and support for classes was removed in 0.24. pass an instance instead., ./scikit-learn/sklearn/utils/estimator_checks.py
+sklearn.utils.check_estimator(): ~ .. versionchanged:: 0.24 passing a class was deprecated in version 0.23, and support for classes was removed in 0.24., ./scikit-learn/sklearn/utils/estimator_checks.py
+sklearn.utils.check_estimator_sparse_data():  warn - FutureWarning warn - FutureWarning warn - FutureWarning, ./scikit-learn/sklearn/utils/estimator_checks.py
+sklearn.utils.check_sample_weights_pandas_series():  warn - FutureWarning, ./scikit-learn/sklearn/utils/estimator_checks.py
+sklearn.utils.check_sample_weights_not_an_array():  warn - FutureWarning, ./scikit-learn/sklearn/utils/estimator_checks.py
+sklearn.utils.check_sample_weights_list():  warn - FutureWarning, ./scikit-learn/sklearn/utils/estimator_checks.py
+sklearn.utils.check_sample_weights_shape():  warn - FutureWarning, ./scikit-learn/sklearn/utils/estimator_checks.py
+sklearn.utils.check_sample_weights_invariance():  warn - FutureWarning, ./scikit-learn/sklearn/utils/estimator_checks.py
+sklearn.utils.check_dont_overwrite_parameters():  warn - FutureWarning, ./scikit-learn/sklearn/utils/estimator_checks.py
+sklearn.utils.check_fit2d_predict1d():  warn - FutureWarning, ./scikit-learn/sklearn/utils/estimator_checks.py
+sklearn.utils.check_methods_subset_invariance():  warn - FutureWarning, ./scikit-learn/sklearn/utils/estimator_checks.py
+sklearn.utils.check_methods_sample_order_invariance():  warn - FutureWarning, ./scikit-learn/sklearn/utils/estimator_checks.py
+sklearn.utils.check_transformer_general():  warn - FutureWarning, ./scikit-learn/sklearn/utils/estimator_checks.py
+sklearn.utils.check_transformer_data_not_an_array():  warn - FutureWarning, ./scikit-learn/sklearn/utils/estimator_checks.py
+sklearn.utils.check_transformers_unfitted():  warn - FutureWarning, ./scikit-learn/sklearn/utils/estimator_checks.py
+sklearn.utils.check_estimators_empty_data_messages():  warn - FutureWarning, ./scikit-learn/sklearn/utils/estimator_checks.py
+sklearn.utils.check_estimators_nan_inf():  warn - FutureWarning warn - FutureWarning, ./scikit-learn/sklearn/utils/estimator_checks.py
+sklearn.utils.check_estimators_partial_fit_n_features():  warn - FutureWarning, ./scikit-learn/sklearn/utils/estimator_checks.py
+sklearn.utils.check_classifier_multioutput():  warn - FutureWarning, ./scikit-learn/sklearn/utils/estimator_checks.py
+sklearn.utils.check_regressor_multioutput():  warn - FutureWarning, ./scikit-learn/sklearn/utils/estimator_checks.py
+sklearn.utils.check_clustering():  warn - FutureWarning, ./scikit-learn/sklearn/utils/estimator_checks.py
+sklearn.utils.check_clusterer_compute_labels_predict():  warn - FutureWarning, ./scikit-learn/sklearn/utils/estimator_checks.py
+sklearn.utils.check_classifiers_one_label():  warn - FutureWarning warn - FutureWarning, ./scikit-learn/sklearn/utils/estimator_checks.py
+sklearn.utils.check_classifiers_multilabel_representation_invariance():  warn - FutureWarning, ./scikit-learn/sklearn/utils/estimator_checks.py
+sklearn.utils.check_estimators_fit_returns_self():  warn - FutureWarning, ./scikit-learn/sklearn/utils/estimator_checks.py
+sklearn.utils.check_supervised_y_2d():  warn - FutureWarning, ./scikit-learn/sklearn/utils/estimator_checks.py
+sklearn.utils.check_regressors_int():  warn - FutureWarning, ./scikit-learn/sklearn/utils/estimator_checks.py
+sklearn.utils.check_regressors_train():  warn - FutureWarning, ./scikit-learn/sklearn/utils/estimator_checks.py
+sklearn.utils.check_class_weight_classifiers():  warn - FutureWarning, ./scikit-learn/sklearn/utils/estimator_checks.py
+sklearn.utils.check_class_weight_balanced_classifiers():  warn - FutureWarning, ./scikit-learn/sklearn/utils/estimator_checks.py
+sklearn.utils.check_class_weight_balanced_linear_classifier():  warn - FutureWarning, ./scikit-learn/sklearn/utils/estimator_checks.py
+sklearn.utils.check_estimators_overwrite_params():  warn - FutureWarning, ./scikit-learn/sklearn/utils/estimator_checks.py
+sklearn.utils.check_no_attributes_set_in_init():  warn - FutureWarning, ./scikit-learn/sklearn/utils/estimator_checks.py
+sklearn.utils.check_sparsify_coefficients():  warn - FutureWarning, ./scikit-learn/sklearn/utils/estimator_checks.py
+sklearn.utils.check_classifier_data_not_an_array():  warn - FutureWarning, ./scikit-learn/sklearn/utils/estimator_checks.py
+sklearn.utils.check_regressor_data_not_an_array():  warn - FutureWarning, ./scikit-learn/sklearn/utils/estimator_checks.py
+sklearn.utils.check_estimators_data_not_an_array():  warn - FutureWarning, ./scikit-learn/sklearn/utils/estimator_checks.py
+sklearn.utils.check_parameters_default_constructible():  warn - FutureWarning, ./scikit-learn/sklearn/utils/estimator_checks.py
+sklearn.utils.check_non_transformer_estimators_n_iter():  warn - FutureWarning, ./scikit-learn/sklearn/utils/estimator_checks.py
+sklearn.utils.check_transformer_n_iter():  warn - FutureWarning, ./scikit-learn/sklearn/utils/estimator_checks.py
+sklearn.utils.check_get_params_invariance():  warn - FutureWarning, ./scikit-learn/sklearn/utils/estimator_checks.py
+sklearn.utils.check_set_params():  warn - FutureWarning, ./scikit-learn/sklearn/utils/estimator_checks.py
+sklearn.utils.check_classifiers_regression_target():  warn - FutureWarning, ./scikit-learn/sklearn/utils/estimator_checks.py
+sklearn.utils.check_decision_proba_consistency():  warn - FutureWarning, ./scikit-learn/sklearn/utils/estimator_checks.py
+sklearn.utils.safe_sparse_dot(): @_deprecate_positional_args, ./scikit-learn/sklearn/utils/extmath.py
+sklearn.utils.randomized_range_finder(): @_deprecate_positional_args, ./scikit-learn/sklearn/utils/extmath.py
+sklearn.utils.randomized_svd(): @_deprecate_positional_args, ./scikit-learn/sklearn/utils/extmath.py
+sklearn.utils.weighted_mode(): @_deprecate_positional_args, ./scikit-learn/sklearn/utils/extmath.py
+sklearn.utils.single_source_shortest_path_length(): @_deprecate_positional_args, ./scikit-learn/sklearn/utils/graph.py
+sklearn.utils._safe_split(): ~.. deprecated:: 0.24 the _pairwise attribute is deprecated in 0.24. from 0.26 and onward, this function will check for the pairwise estimator tag., ./scikit-learn/sklearn/utils/metaestimators.py
+sklearn.utils.incr_mean_variance_axis(): @_deprecate_positional_args, ./scikit-learn/sklearn/utils/sparsefuncs.py
+sklearn.utils.assert_all_finite(): @_deprecate_positional_args, ./scikit-learn/sklearn/utils/validation.py
+sklearn.utils.as_float_array(): @_deprecate_positional_args, ./scikit-learn/sklearn/utils/validation.py
+sklearn.utils.check_array(): @_deprecate_positional_args, ./scikit-learn/sklearn/utils/validation.py
+sklearn.utils.check_X_y(): @_deprecate_positional_args, ./scikit-learn/sklearn/utils/validation.py
+sklearn.utils.column_or_1d(): @_deprecate_positional_args, ./scikit-learn/sklearn/utils/validation.py
+sklearn.utils.check_symmetric(): @_deprecate_positional_args, ./scikit-learn/sklearn/utils/validation.py
+sklearn.utils.check_is_fitted(): @_deprecate_positional_args, ./scikit-learn/sklearn/utils/validation.py
+sklearn.utils._safe_indexing(): ~ this utility is documented, but **private**. this means that backward compatibility might be broken without any deprecation cycle., ./scikit-learn/sklearn/utils/__init__.py
+sklearn.utils.safe_sqr(): @_deprecate_positional_args, ./scikit-learn/sklearn/utils/__init__.py
+sklearn.utils.gen_batches(): @_deprecate_positional_args, ./scikit-learn/sklearn/utils/__init__.py
+sklearn.utils.gen_even_slices(): @_deprecate_positional_args, ./scikit-learn/sklearn/utils/__init__.py
+sklearn.utils.get_chunk_n_rows(): @_deprecate_positional_args, ./scikit-learn/sklearn/utils/__init__.py
+sklearn.utils.all_estimators():  warn - FutureWarning, ./scikit-learn/sklearn/utils/__init__.py
