@@ -25,19 +25,19 @@ function getDeprecatedAPIcall(currentLine:string, apiElements:string[]){
 					const str1 = elements[0].replace("()","");
 					if(!kwd.includes(str1)){
 						kwd.push(str1);
-					}
-					let msg1:string = elements[1];
-					if(msg1.indexOf("arg")!==-1){
-						msg1 = `${elements[0]} : arguments has been deprecated"`;
-					}
-					else{
-						msg1 = `${elements[0]} has been deprecated. `;
-					}
-					for(let i=1;i<elements.length;i++){
-						msg1 +=elements[i]+" ";
-					}
-					if(!msg.includes(msg1)){
-						msg.push(msg1);
+						let msg1:string = elements[1];
+						if(msg1.indexOf("arg")!==-1){
+							msg1 = `${elements[0]} : arguments has been deprecated"`;
+						}
+						else{
+							msg1 = `${elements[0]} has been deprecated. `;
+						}
+						for(let i=1;i<elements.length;i++){
+							msg1 +=elements[i]+" ";
+						}
+						if(!msg.includes(msg1)){
+							msg.push(msg1);
+						}
 					}
 				}
 			}
@@ -89,7 +89,7 @@ function highlightDeprecated(){
     return strArr;
 }
 export function activate(context: vscode.ExtensionContext) {
-
+	list = [];
 	console.log('Congratulations, your extension "APIScanner" is now active!');
 	// let items: vscode.QuickPickItem[] = [];
 	// let options1:string[] = ["Use existing deprecated API List","Generate list dynamically"];
@@ -173,8 +173,8 @@ export function activate(context: vscode.ExtensionContext) {
 		}
 		const text = activeEditor.document.getText();
 		const deprecatedCall: vscode.DecorationOptions[] = [];
-		let ind:number[] = [];
 		for(let i=0;i<kwd.length;i++){
+			let ind:number[] = [];
 			ind = getIndicesOf(kwd[i],text,1);
 			if(ind.length!==0){
 				for(let j=0;j<ind.length;j++){
@@ -182,6 +182,7 @@ export function activate(context: vscode.ExtensionContext) {
 						const startPos = activeEditor.document.positionAt(ind[j]);
 						const endPos = activeEditor.document.positionAt(ind[j] + kwd[i].length);
 						const decoration = { range: new vscode.Range(startPos, endPos), hoverMessage: msg[i] };
+						console.log("here - ",kwd,msg);
 						deprecatedCall.push(decoration);
 					}
 				}
