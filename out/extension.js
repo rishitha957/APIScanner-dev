@@ -3,6 +3,7 @@ Object.defineProperty(exports, "__esModule", { value: true });
 exports.deactivate = exports.activate = void 0;
 const vscode = require("vscode");
 const fs = require("fs");
+// import {PythonShell} from 'python-shell';
 let list = [];
 let kwd = [];
 let package1 = "";
@@ -72,7 +73,7 @@ function readContents(currentLine) {
 function highlightDeprecated() {
     const editor = vscode.window.activeTextEditor;
     let strArr = [];
-    vscode.window.showInformationMessage('API Scanner is now active!');
+    // vscode.window.showInformationMessage('API Scanner is now active!');
     if (editor) {
         let lineCount = editor.document.lineCount;
         for (let i = 0; i < lineCount; i++) {
@@ -91,6 +92,14 @@ function highlightDeprecated() {
 function activate(context) {
     list = [];
     console.log('Congratulations, your extension "APIScanner" is now active!');
+    // eslint-disable-next-line @typescript-eslint/naming-convention
+    var PythonShell = require('python-shell');
+    PythonShell.run('test.py', null, function (err) {
+        if (err) {
+            throw err;
+        }
+        console.log('finished');
+    });
     // let items: vscode.QuickPickItem[] = [];
     // let options1:string[] = ["Use existing deprecated API List","Generate list dynamically"];
     // for (let index = 0; index < options1.length; index++) {
