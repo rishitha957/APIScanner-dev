@@ -93,46 +93,11 @@ export function activate(context: vscode.ExtensionContext) {
 	list = [];
 	console.log('Congratulations, your extension "APIScanner" is now active!');
 	// eslint-disable-next-line @typescript-eslint/naming-convention
-	var PythonShell = require('python-shell');
-	PythonShell.run('test.py', null, function (err: any) {
-		if (err) {throw err;}
-		console.log('finished');
-	  }); 
-	// let items: vscode.QuickPickItem[] = [];
-	// let options1:string[] = ["Use existing deprecated API List","Generate list dynamically"];
-	// for (let index = 0; index < options1.length; index++) {
-	// 	let item = options1[index];
-	// 	items.push({ 
-	// 		label: "("+(index+1)+") - ", 
-	// 		description: item,
-	// 	});
-	// 	}
-
-	// 	vscode.window.showQuickPick(items).then(selection => {
-	// 	// the user canceled the selection
-	// 	if (!selection) {
-	// 		return;
-	// 	}
-
-	// 	// the user selected some item. You could use `selection.name` too
-	// 	switch (selection.description) {
-	// 		case "Use existing deprecated API List": 
-	// 			console.log(selection.description);
-	// 			break;
-	// 		case "Generate list dynamically": 
-	// 			var shell = require('shelljs');
-	// 			var path = require('path');
-	// 			shell.config.execPath = path.join('C:', 'Program Files', 'nodejs', 'node.exe');
-	// 			shell.echo("test");
-	// 			shell.cd(path.join(__dirname, "commands/pyScripts/"));
-	// 			shell.exec('python main.py');
-	// 			break;
-	// 		//.....
-	// 		default:
-	// 		break;
-	// 	}
-	// });
-
+	// var PythonShell = require('python-shell');
+	// PythonShell.run('test.py', null, function (err: any) {
+	// 	if (err) {throw err;}
+	// 	console.log('finished');
+	//   }); 
 	let timeout: NodeJS.Timer | undefined = undefined;
 
 	const deprecationDecorationType = vscode.window.createTextEditorDecorationType({

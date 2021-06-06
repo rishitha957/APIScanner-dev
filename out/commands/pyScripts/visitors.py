@@ -97,6 +97,6 @@ class ClassVisitor(ast.NodeVisitor):
                 self.func_map[f] = fv.func_map[f]
             for f in fv._func_names:
                 self.func_names.append(f)
-            if(name1 == "PairGrid"):
-                print(fv.func_map)
+            # if(name1 == "PairGrid"):
+            #     print(fv.func_map)
         ast.NodeVisitor.generic_visit(self,node)
